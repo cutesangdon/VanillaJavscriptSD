@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oswald:wght@200&family=Roboto&display=swap');
 
 * {
   margin:0;   /* 마진 리셋 */
@@ -30,15 +30,14 @@ header{
 
 /* 로고 */
 #logo{ 
-  float:left;   /* 왼쪽으로 플로팅 */ 
-  width:250px;   /*  너비 */ 
-  height:100px;   /* 높이 */
-  line-height:50px;  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */
-  padding-left:860px;  /* 왼쪽에 여백 */
+text-align: center;   /* 가운데 정렬 */ 
+   /*  너비 */ 
+   /* 높이 */
+  /* 세로로 중간에 맞춤 - 줄간격을 높이 값과 같게 */ /* 왼쪽에 여백 */
 }
 #logo h1 {
-  font-family:'Merienda', cursive;
-  font-weight:700;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:2000;
   font-size:40px;   /* 글자 크기 */
   color:#fff;   /* 글자 색*/
   text-shadow:0 -1px 0 #222;  /* 그림자 색 */
