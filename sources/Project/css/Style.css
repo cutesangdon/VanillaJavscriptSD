@@ -45,7 +45,7 @@ text-align: center;   /* 가운데 정렬 */
 
 /* 내비게이션 */
 nav{  
-  float:right;   /* 오른쪽으로 플로팅 */
+  float:left;   /* 오른쪽으로 플로팅 */
   width:900px;   /*   너비 */  
   height:100px;   /* 메뉴 영역 높이 */  
   padding-top:40px;  /* 메뉴를 아래로 내리기 위해 */  
