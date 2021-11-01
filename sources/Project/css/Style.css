@@ -32,6 +32,11 @@ header{
 #logo{ 
 text-align: center;   /* 가운데 정렬 */ 
 padding-top: 20px;  /* 위쪽 여백 */
+}
+
+#logo1{   
+  text-align: center;   /* 가운데 정렬 */ 
+  padding-top: 20px;  /* 위쪽 여백 */
 
 }
 #logo h1 {

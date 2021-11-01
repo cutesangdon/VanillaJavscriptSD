@@ -1,1 +1,102 @@
 <!Doctype html>
+<html lang = "ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Random</title>
+  <link rel="stylesheet" href="css/Style.css">
+</head>
+<body onLoad="init()">
+  
+  <div id="container">
+    <header>
+      <div id="logo">
+       <a href="mainpage1.html">
+        <h1>Random</h1>
+       </a>
+      </div>
+     <nav>
+      <ul id="topMenu">
+        <li><a href="https://www.naver.com/">네이버</a></li>
+        <li><a href="page1.html">Random</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+      </ul>
+     </nav>
+    </header>
+  </div>
+  <input type='checkbox'
+       name='animal' 
+       value='selectall'
+       onclick='selectAll(this)'/> <b>Select All</b>
+<br />
+<input type='checkbox'
+       name='person' 
+       value='zero'/> 영
+<br />
+<input type='checkbox' 
+       name='person' 
+       value='one' /> 일
+<br />
+<input type='checkbox' 
+       name='person' 
+       value='two' /> 이
+<br />
+<input type='checkbox' 
+       name='person' 
+       value='three' /> 삼
+<br />
+<input type='checkbox' 
+       name='person' 
+       value='four' /> 사
+<br />
+<input type='checkbox' 
+       name='person' 
+       value='five' /> 오
+<br />
+<input type='checkbox' 
+       name='person' 
+       value='six' /> 육
+<br />
+<input type='checkbox' 
+       name='person' 
+       value='seven' /> 칠
+<br />
+<input type='checkbox' 
+       name='person' 
+       value='eight' /> 팔
+<br />
+<input type='checkbox' 
+       name='person' 
+       value='nine' /> 구
+<br />
+<input type='checkbox' 
+       name='person' 
+       value='ten' /> 십
+
+       <button onclick="SHUFFLE_click()">SHUFFLE</button>
+<script>
+  
+  function SHUFFLE_click() {
+        var obj_length = document.getElementsByName("person").length;
+  
+        for (var i=0; i<obj_length; i++) {
+            if (document.getElementsByName("person")[i].checked == true) {
+                alert(document.getElementsByName("person")[i].value);
+            }
+        }
+    }
+</script>
+ 
+ <script>
+   function selectAll(selectAll)  {
+  const checkboxes 
+       = document.getElementsByName('person');
+  
+  checkboxes.forEach((checkbox) => {
+    checkbox.checked = selectAll.checked;
+  })
+}
+  </script>
+
+</body>
+</html>
