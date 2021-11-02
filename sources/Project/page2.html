@@ -24,6 +24,11 @@
      </nav>
     </header>
   </div>
+  <input type='checkbox'
+       name='person' 
+       value='selectall'
+       onclick='selectAll(this)'/> <b>Select All</b>
+<br />
 <input type='checkbox'
        name='person' 
        value='zero'/> 영
@@ -70,16 +75,16 @@
 
        <button onclick="SHUFFLE_click()">SHUFFLE</button>
 <script>
-        function SHUFFLE_click() {
-            var msg = "RandomTeam\n";
-            var checkBoxes = document.getElementsByName("person");
+  
+  function SHUFFLE_click() {
+        var hum = ['zero','one','two','three','four','five','six','seven','eight','nine','ten']
+        for (var i=0; i<obj_length; i++){       
+        if (document.getElementsByName('person')[checked == true]);
+               alert (hum,0);
+        }
+ }
 
-            for (var i = 0; i < checkBoxes.length; i++){
-                if (checkBoxes[i].checked) 
-                {msg += ("- " + checkBoxes[i].value + "\n");}
-            } alert(msg)
-       }
-    function selectAll(selectAll)  {
+   function selectAll(selectAll)  {
   const checkboxes 
        = document.getElementsByName('person');
   
@@ -87,6 +92,7 @@
     checkbox.checked = selectAll.checked;
   })
 }
-</script>
+  </script>
+
 </body>
 </html>
