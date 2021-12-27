@@ -24,8 +24,19 @@
     </header>
   </div>
   <script>
-      for(var i=1; i<=50; i++){
-    document.write(i,"<br>");
-    }
+     var today = new Date();
+     var inday = new Date(2018,9,22);
+     var inYear = inday.getFullYear(),
+     inMonth = inday.getMonth(),
+     inDate = inday.getDate();
+     var nowTime = today.getTime() - inday.getTime();
+     var nowDay = Math.ceil(nowTime/(60*1000*60*24));
+     var nowYear = Math.floor(nowDay / 365);
+     var perYear = Math.floor(nowDay % 365);
+
+     document.write("<h1>[컴아트 시스템 입사]<h1>");
+     document.write("입사일은 " + inYear+ "년 " + (inMonth + 1) + "월 " + inDate + "일이고" + "<br>");
+     document.write("입사 후 " + nowDay + "일이 지났으며" + "<br>");
+     document.write(nowYear + "년 " + perYear + "일이 지났습니다.");
   </script>
 </body>
