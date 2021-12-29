@@ -9,16 +9,16 @@
   <div id="container">
     <header>
       <div id="logo">
-       <a href="mainpage1.html">
+       <a href="mainpage.html">
         <h1>Main Page</h1>
        </a>
       </div>
      <nav>
       <ul id="topMenu">
-        <li><a href="https://www.naver.com/">네이버</a></li>
-        <li><a href="page1.html">메뉴2</a></li>
-        <li><a href="#">메뉴3</a></li>
-        <li><a href="#">메뉴4</a></li>
+        <li><a href="page1.html">Page1</a></li>
+        <li><a href="page2.html">Page2</a></li>
+        <li><a href="page3.html">Page3</a></li>
+        <li><a href="#">Page4</a></li>
       </ul>
      </nav>
     </header>
@@ -28,20 +28,20 @@
      var join = new Date(2018,9,22);      /* 입사 연,월,일 */
      var discharge = new Date(2022,11,05) /* 전역 연,월,일 */
 
-     var dischargeYear = discharge.getFullYear(),   
+     var dischargeYear = discharge.getFullYear(),     /**************************/
      dischargeMonth = discharge.getMonth(),           /* 입사 연,월,일 불러오기 */
-     dischargeDate = discharge.getDate();
+     dischargeDate = discharge.getDate();             /**************************/
 
-     var inYear = join.getFullYear(),   
+     var inYear = join.getFullYear(),     /**************************/
      inMonth = join.getMonth(),           /* 전역 연,월,일 불러오기 */
-     inDate = join.getDate();
+     inDate = join.getDate();             /**************************/
 
      var workingTime = today.getTime() - join.getTime();       /* 재직일 수 msc로 반환*/
      var workingDay = Math.ceil(workingTime/(60*1000*60*24));  /* msc를 일로 계산 */
      var workingYear = Math.floor(workingDay / 365);           /* 재직 일을 연으로 변환 */
      var workDay = Math.floor(workingDay % 365);               /* 연으로 변환 후 나머지 */
      
-     var dischargeTime = discharge.getTime() - today.getTime();       /* 재직일 수 msc로 반환*/
+     var dischargeTime = discharge.getTime() - today.getTime();    /* 재직일 수 msc로 반환*/
      var dischargeDay = Math.ceil(dischargeTime/(60*1000*60*24));  /* msc를 일로 계산 */
 
      document.write("<h1>[컴아트 시스템 입사]<h1>");
@@ -54,3 +54,4 @@
      + dischargeDate + "일이며" + "<br>" + dischargeDay + "일이 남았습니다.")
   </script>
 </body>
+</html>>
