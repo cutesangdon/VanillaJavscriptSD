@@ -23,5 +23,18 @@
      </nav>
     </header>
   </div>
+  <script>
+    var food = ['김치찌개','고구마','닭가슴살','돼지고기','김치','단무지','탕수육','짜장면','짬뽕','김밥'
+    ,'아구찜','물회','돈까스','새우튀김','곱창','우동','라면']
+    var nan = (Math.random()*16);
+    var jung = (Math.floor(nan));
+    
+
+    function what(){
+      alert(food[jung]);
+      location.reload();
+    }
+  </script>
+  <button onclick="what()">오늘 뭐먹지</button>
 </body>
 </html>
