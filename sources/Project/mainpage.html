@@ -44,12 +44,11 @@
      var dischargeTime = discharge.getTime() - today.getTime();    /* 재직일 수 msc로 반환*/
      var dischargeDay = Math.ceil(dischargeTime/(60*1000*60*24));  /* msc를 일로 계산 */
 
-     document.write("<h1>[컴아트 시스템 입사]<h1>");
-     document.write("입사일은 " + inYear+ "년 " + (inMonth + 1) + "월 " + inDate + "일입니다." + "<br>");
-     document.write("<br>") 
-     document.write("입사 후 " + workingDay + "일이 지났으며" + "<br>");
-     document.write(workingYear + "년 " + workDay + "일이 지났습니다." + "<br>");
      document.write("<br>")
+     document.write("<br>"+"<h1>[컴아트 시스템 입사]<h1>");
+     document.write("입사일은 " + inYear+ "년 " + (inMonth + 1) + "월 " + inDate + "일입니다." + "<br>"+"<br>");
+     document.write("입사 후 " + workingDay + "일이 지났으며" + "<br>");
+     document.write(workingYear + "년 " + workDay + "일이 지났습니다." + "<br>"+"<br>");
      document.write("전역일은 " + dischargeYear + "년 " + (dischargeMonth + 1) + "월 " 
      + dischargeDate + "일이며" + "<br>" + dischargeDay + "일이 남았습니다.")
   </script>
