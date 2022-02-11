@@ -23,16 +23,53 @@
        </nav>
     </header>
   </div>
-  <span id = "remaining time">ab</span>
+  <body>
+    <span id = "remaining hour">기본</span>
+    <span id = "remaining min">1시간</span>
+    <span id = "remaining sec">입니다.</span>
+  </body>
   <script>
-    var time = 3000;
-    time = setInterval("count()",1000);
-    
-    function count(){
-      time --;
-      document.getElementById("remaining time").innerHTML = time;
-      
+    var time = 4;
+    function thirtyM(){
+      time=time+1800
+    }
+    function oneH(){
+      time=time+3600;
+    }
+    function end(){
+      time=(time+1)-time;
+    }
+    function start(){
+    if(time>0){
+      var interval = setInterval("minus()",1000)
+    }
+    }
+    function minus(){
+      var hour = Math.floor((time-1)/3600)
+      time--;
+      document.getElementById("remaining hour").innerHTML = "남은시간 "+Math.floor(hour)+" :";
+      if((time/60)-(hour*60)<100,(time/60)-(hour*60)>9){
+        document.getElementById("remaining min").innerHTML = Math.floor((time/60)-(hour*60))+" :";
+      }
+      if((time/60)-(hour*60)<10){
+        document.getElementById("remaining min").innerHTML = "0"+Math.floor((time/60)-(hour*60))+" :";
+      }
+      if(time%60<60,time%60>9){
+        document.getElementById("remaining sec").innerHTML = time%60
+      }
+      if(time%60<10){
+        document.getElementById("remaining sec").innerHTML = "0"+time%60
+      }
+      if(time==0){
+        clearInterval(interval)
+        alert("시간이 종료되었습니다.")
+      }
     }
   </script>
+  <br></br>
+  <button onclick="start()">서비스 시작</button><br/>
+  <button onclick="thirtyM()">30분 추가</button><br/>
+  <button onclick="oneH()">1시간 추가</button><br/>
+  <button onclick="end()">서비스 종료</button>
 </body>
 </html>
