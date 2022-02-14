@@ -10,26 +10,27 @@
     <header>
       <div id="logo">
        <a href="mainpage.html">
-        <h1>Page4</h1>
+        <h1>PC</h1>
        </a>
       </div>
       <nav>
         <ul id="topMenu">
-          <li><a href="page1.html">오늘 뭐먹지?</a></li>
+          <li><a href="page1.html">MENU</a></li>
           <li><a href="page2.html">page2</a></li>
           <li><a href="page3.html">page3</a></li>
-          <li><a href="Page4.html">Page4</a></li>
+          <li><a href="Page4.html">PC</a></li>
         </ul>
        </nav>
     </header>
   </div>
   <body>
-    <span id = "remaining hour">기본</span>
-    <span id = "remaining min">1시간</span>
-    <span id = "remaining sec">입니다.</span>
+    <p>기본 1시간 입니다.</p>
+    <span id = "remaining hour">잔여</span>
+    <span id = "remaining min">시간</span>
+    <span id = "remaining sec"></span>
   </body>
   <script>
-    var time = 4;
+    var time = 3600;
     function thirtyM(){
       time=time+1800
     }
@@ -39,15 +40,13 @@
     function end(){
       time=(time+1)-time;
     }
-    function start(){
-    if(time>0){
-      var interval = setInterval("minus()",1000)
-    }
-    }
+      if(time>1){
+      var Interval= setInterval("minus()",1000)
+      }
     function minus(){
       var hour = Math.floor((time-1)/3600)
       time--;
-      document.getElementById("remaining hour").innerHTML = "남은시간 "+Math.floor(hour)+" :";
+      document.getElementById("remaining hour").innerHTML = "잔여 시간 "+Math.floor(hour)+" :";
       if((time/60)-(hour*60)<100,(time/60)-(hour*60)>9){
         document.getElementById("remaining min").innerHTML = Math.floor((time/60)-(hour*60))+" :";
       }
@@ -61,13 +60,13 @@
         document.getElementById("remaining sec").innerHTML = "0"+time%60
       }
       if(time==0){
-        clearInterval(interval)
+        clearInterval(Interval)
         alert("시간이 종료되었습니다.")
       }
     }
+    
   </script>
   <br></br>
-  <button onclick="start()">서비스 시작</button><br/>
   <button onclick="thirtyM()">30분 추가</button><br/>
   <button onclick="oneH()">1시간 추가</button><br/>
   <button onclick="end()">서비스 종료</button>
