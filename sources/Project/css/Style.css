@@ -13,28 +13,23 @@ ul {
   list-style: none;
 }
 
-#container {
+/* #container {
   margin:0 auto;  /* 화면 중앙에 배치 */
-  width:100%;    /* 너비 */    
-  background-color: #fff;
-}
+  /* width:100%;    /* 너비 */    
+  /* background-color: #fff;
+/* }
 
 /*********************************/
 /* 헤더 영역 - 로고와 내비게이션 */
 /*********************************/
 
-/*header{
-  width:100%;    /*  너비 */
-  /*height:70px;   /* 높이 */ 
-  /*background-color:rgb(0, 0, 0);  
-/*}
+header{height: 75px; background-color: #222; border: 1px solid #253342;
+      position: fixed; width: 100%; z-index: 9999; top:0; left: 0%;}
+h1{color:white; line-height: 75px; float: left;}
 
 /* 로고 */
-#logo{ 
-  display:inline;
-  text-align: left;
+#wrapper{width: 1170px; margin:0 auto;}
 
-}
 #logo h1 {
   font-weight:2000;
   font-size:40px;   /* 글자 크기 */
@@ -42,54 +37,11 @@ ul {
   text-shadow:0 -1px 0 #222;  /* 그림자 색 */
 }
 
-/* 내비게이션 */
-nav{  
-  width: 100%;
-  height: 150px;
-  background-color: rgb(0, 0, 0);
-  font-size: 1.8em;
-  font-weight: bold;
-  position: relative;
-  text-align: center;
-}
-nav li{
-  display: inline;
-  padding:0 50px;
-}
-nav li a{
-  color:rgb(255, 255, 255);
-}
-nav li a1{
-  color:rgb(255, 255, 255);
-  text-align: left;
-}
-nav li a:hover{
-  color:#576979;
-  text-shadow:0 -2px #222;
-}
-
-
-#topMenu {  
-  height:45px; 
-}
-#topMenu > li {
-  display:block;
-  width: 100%; 
-  text-align: center;
-  border-bottom: 1px solid#576979; 
-}
-#topMenu > li > a{
-  display:block;  /* 링크 텍스트는 블록으로 */ 
-  font-size:1.2em;
-  color:#fff;  /* 글자 색 */
-  font-weight:600;  /* 글자 굵기 */
-  margin-left: 15px;
-  margin-right: 15px;
-  padding:10px 25px;  /* 패딩 */ 
-}
+#topMenu {float:right; height:45px;}
+#topMenu > li {float: left;}
+#topMenu > li > a{line-height: 75px; color:white; padding:0 15px; display: block;}
 #topMenu > li > a:hover {
-  color:#1fa8f8;
-  text-shadow:0 -2px #222;
+
 }
 
 
