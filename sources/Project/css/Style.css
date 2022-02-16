@@ -13,35 +13,29 @@ ul {
   list-style: none;
 }
 
-/* #container {
+#container {
   margin:0 auto;  /* 화면 중앙에 배치 */
-  /* width:100%;    /* 너비 */    
-  /* background-color: #fff;
-/* }
+  width:100%;    /* 너비 */    
+  background-color: #fff;
+}
 
 /*********************************/
 /* 헤더 영역 - 로고와 내비게이션 */
 /*********************************/
 
 header{height: 75px; background-color: #222; border: 1px solid #253342;
-      position: fixed; width: 100%; z-index: 9999; top:0; left: 0%;}
-h1{color:white; line-height: 75px; float: left;}
+       width: 100%; z-index: 9999; top:0; left: 0%;}
+h2{color:#ddd; line-height:75px; float: left; font-size: 30px;}
+
 
 /* 로고 */
-#wrapper{width: 1170px; margin:0 auto;}
-
-#logo h1 {
-  font-weight:2000;
-  font-size:40px;   /* 글자 크기 */
-  color:#fff;   /* 글자 색*/
-  text-shadow:0 -1px 0 #222;  /* 그림자 색 */
-}
+#wrapper{width: 1280px; margin:0 auto;}
 
 #topMenu {float:right; height:45px;}
 #topMenu > li {float: left;}
 #topMenu > li > a{line-height: 75px; color:white; padding:0 15px; display: block;}
 #topMenu > li > a:hover {
-
+  color: rgb(80, 80, 80);
 }
 
 
