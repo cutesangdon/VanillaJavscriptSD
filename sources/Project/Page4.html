@@ -29,10 +29,15 @@
     <span id = "remaining hour">잔여</span>
     <span id = "remaining min">시간</span>
     <span id = "remaining sec"></span>
+    <br/>
+    <span id = "used hour">사용</span>
+    <span id = "used min">시간</span>
+    <span id = "used sec"></span>
   </div>
   </body>
   <script>
     var time = 3600;
+    var utime = 0;
     function thirtyM(){
       time=time+1800
     }
@@ -48,6 +53,7 @@
     function minus(){
       var hour = Math.floor((time-1)/3600)
       time--;
+      utime++;
       document.getElementById("remaining hour").innerHTML = "잔여 시간 "+Math.floor(hour)+" :";
       if((time/60)-(hour*60)<100,(time/60)-(hour*60)>9){
         document.getElementById("remaining min").innerHTML = Math.floor((time/60)-(hour*60))+" :";
@@ -65,6 +71,9 @@
         clearInterval(Interval)
         alert("시간이 종료되었습니다.")
       }
+      document.getElementById("used hour").innerHTML ="사용 시간 "+ utime;
+      document.getElementById("used min").innerHTML =utime;
+      document.getElementById("used sec").innerHTML =utime;
     }
   </script>
 <div id="btnP4">
