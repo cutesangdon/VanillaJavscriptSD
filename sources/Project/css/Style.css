@@ -1,46 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Oswald:wght@200&family=Roboto&display=swap');
 
-* {
-  margin:0;   /* 마진 리셋 */
-  padding:0;   /* 패딩 리셋 */
-  box-sizing: border-box;
-  /* box-sizing: border-box;   /* 박스 영역은 테두리까지 */ 
-}
-a {
-  text-decoration:none;  /* 텍스트 링크 밑줄 없애기 */ 
-}
-ul {
-  list-style: none;
-}
+* {margin:0; padding:0; box-sizing: border-box; }
+/* 마진 리셋, 패딩 리셋, 박스 영역은 테두리까지 */
+a {text-decoration:none;}/* 텍스트 링크 밑줄 없애기 */
+ul {list-style: none;}
 
 #container {
   margin:0 auto;  /* 화면 중앙에 배치 */
-  width:100%;    /* 너비 */    
-  background-color: #fff;
+  width:100%;    /* 너비 */
+  height: 80px;  
+  background-color: #222;
 }
 
 /*********************************/
 /* 헤더 영역 - 로고와 내비게이션 */
 /*********************************/
 
-header{height: 75px; background-color: #222; border: 1px solid #253342;
+header {height: 75px; background-color: #222; border: none;
        width: 100%; z-index: 9999; top:0; left: 0%;}
-h2{color:#ddd; line-height:75px; float: left; font-size: 30px;}
+body{background-color: rgb(190, 190, 190);}
+h1 {display: block; padding-left: 320px; font-size: 20px;}
+h2 {color:#ddd; line-height:75px; float: left; font-size: 30px;}
 
 
 /* 로고 */
-#wrapper{width: 1280px; margin:0 auto;}
-
+#wrapper {width: 1280px; margin:0 auto;}
 #topMenu {float:right; height:45px;}
 #topMenu > li {float: left;}
-#topMenu > li > a{line-height: 75px; color:white; padding:0 15px; display: block;}
-#topMenu > li > a:hover {
-  color: rgb(80, 80, 80);
-}
+#topMenu > li > a {line-height: 75px; color:white; padding:0 15px; display: block;}
+#topMenu > li > a:hover {color: rgb(80, 80, 80);}
 
 
 /* 본문 */
-
+#btn {position: relative; left: 320px;}
+#checkbox{position: relative; left: 340px;}
+#spantext{position: relative; left: 320px;}
 .contents {
   width:1000px;
   margin:50px auto;  

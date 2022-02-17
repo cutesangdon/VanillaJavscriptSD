@@ -6,28 +6,30 @@
   <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
-  <div>
-    <header>
-      <div id="wrapper">
-        <a href="mainpage.html">
-         <h2 href="mainpage.html">Main Page</h2>
-        </a>
-         <nav>
-        <ul id="topMenu">
+<div id="container">
+  <header>
+    <div id="wrapper">
+      <a href="mainpage.html">
+        <h2 href="mainpage.html">Main Page</h2>
+      </a>
+    <nav>
+      <ul id="topMenu">
           <li><a href="page1.html">MENU</a></li>
           <li><a href="page2.html">Select</a></li>
           <li><a href="page3.html">SelAll</a></li>
           <li><a href="Page4.html">PC</a></li>
-        </ul>
-       </nav>
-      </div>
-    </header>
-  </div>
+      </ul>
+    </nav>
+    </div>
+  </header>
+</div>
   <body>
+  <div id ="spantext">
     <p><br>기본 1시간 입니다.</p>
     <span id = "remaining hour">잔여</span>
     <span id = "remaining min">시간</span>
     <span id = "remaining sec"></span>
+  </div>
   </body>
   <script>
     var time = 3600;
@@ -64,11 +66,11 @@
         alert("시간이 종료되었습니다.")
       }
     }
-    
   </script>
-  <br></br>
+<div id="btn">
   <button onclick="thirtyM()">30분 추가</button><br/>
   <button onclick="oneH()">1시간 추가</button><br/>
   <button onclick="end()">서비스 종료</button>
+</div>
 </body>
 </html>
