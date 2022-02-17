@@ -11,7 +11,7 @@
     <header>
       <div id="wrapper">
         <a href="mainpage.html">
-         <h2 href="mainpage.html">Main Page</h2>
+         <h2>Main Page</h2>
         </a>
          <nav>
         <ul id="topMenu">
@@ -44,12 +44,24 @@
      var dischargeTime = discharge.getTime() - today.getTime();    /* 재직일 수 msc로 반환 **/
      var dischargeDay = Math.ceil(dischargeTime/(60*1000*60*24));  /* msc를 일로 계산 *******/
      /* 출력 영역 */
-     document.write("<h1>[컴아트 시스템 입사]<h1>"+ "<br>");
+     document.write("<p>[컴아트 시스템 입사]<p>");
      document.write("입사일은 " + inYear+ "년 " + (inMonth + 1) + "월 " + inDate + "일입니다." + "<br>"+"<br>");
      document.write("입사 후 " + workingDay + "일이 지났으며" + "<br>");
      document.write(workingYear + "년 " + workDay + "일이 지났습니다." + "<br>"+"<br>");
      document.write("전역일은 " + dischargeYear + "년 " + (dischargeMonth + 1) + "월 " 
-     + dischargeDate + "일이며" + "<br>" + dischargeDay + "일이 남았습니다.")
+     + dischargeDate + "일이며" + "<br>" + dischargeDay + "일이 남았습니다.");
   </script>
+<footer>    
+  <section id="bottomMenu">
+    <ul>
+      <li><a href="#">회사소개</a></li>
+      <li><a href="#">인재채용</a></li>
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">개인정보처리방침</a></li>
+      <li><a href="#">사이트맵</a></li>
+      <li><a href="#">고객센터</a></li>
+    </ul>
+  </section>   
+</footer>
 </body>
 </html>
