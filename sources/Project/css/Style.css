@@ -30,7 +30,7 @@ p{display: block; padding-left: 320px; font-size: 25px; font-family: jua;
 #topMenu {float:right; height:45px; position: fixed; right: 320px;}
 #topMenu > li {float: left;}
 #topMenu > li > a {line-height: 75px; color:white; padding:0 15px; display: block;}
-#topMenu > li > a:hover {color: #fa5064;}
+#topMenu > li > a:hover {color: rgb(190, 190, 190);}
 
 /* 본문 */
 #btnP1 button:hover{background-color: rgb(140, 140, 140);}
