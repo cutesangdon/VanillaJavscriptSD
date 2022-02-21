@@ -87,6 +87,11 @@ main h3 {
   line-height: 2;
 }
 
+#login_wrapper{
+  position: absolute; top: 50%;
+  position: absolute; left: 50%;
+}
+
 
 /******************/
 /*   푸터 영역    */
