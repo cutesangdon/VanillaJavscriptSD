@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="css/Style.css">
 </head>
 <body>
-<div id="container">
   <header>
     <div id="wrapper">
       <a href="mainpage.html">
@@ -22,19 +21,38 @@
     </nav>
     </div>
   </header>
+<div id="container">
+  <div id="cont_left">
+    <p>테스트</p>
+    <div id ="spantext">
+      <h3><br>기본 1시간 입니다.</h3>
+      <span id = "remaining hour">잔여</span>
+      <span id = "remaining min">시간</span>
+      <span id = "remaining sec"></span>
+      <br/>
+      <span id = "used hour">사용</span>
+      <span id = "used min">시간</span>
+      <span id = "used sec"></span>
+      <span id = "Alert"></span>
+    </div>
+    <div id="btnP4">
+      <button onclick="thirtyM()"><h3>30분 추가</h3></button><br/>
+      <button onclick="oneH()"><h3>1시간 추가</h3></button><br/>
+      <button onclick="end()"><h3>시간 종료</h3></button><br/>
+      <button onclick="restart()"><h3>다시 시작</h3></button>
+    </div>
+  </div>
+  <div id="cont_right">
+    <div id="login">
+      <form id="log_in">
+        ID : <input type="text" name="id"><br/>
+        PW : <input type="password" name="pwd">
+      </form>
+    </div>
+  </div>
+</div>
 </div>
   <body>
-  <div id ="spantext">
-    <h3><br>기본 1시간 입니다.</h3>
-    <span id = "remaining hour">잔여</span>
-    <span id = "remaining min">시간</span>
-    <span id = "remaining sec"></span>
-    <br/>
-    <span id = "used hour">사용</span>
-    <span id = "used min">시간</span>
-    <span id = "used sec"></span>
-    <span id = "Alert"></span>
-  </div>
   </body>
   <script>
     var time = 3600;
@@ -93,12 +111,6 @@
       }
     }
   </script>
-<div id="btnP4">
-  <button onclick="thirtyM()"><h3>30분 추가</h3></button><br/>
-  <button onclick="oneH()"><h3>1시간 추가</h3></button><br/>
-  <button onclick="end()"><h3>시간 종료</h3></button><br/>
-  <button onclick="restart()"><h3>다시 시작</h3></button>
-</div>
 <footer>    
   <section id="bottomMenu">
     <ul>
