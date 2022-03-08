@@ -5,17 +5,14 @@ a {text-decoration:none;}                         /* 텍스트 링크 밑줄 없
 ul {list-style: none;}
 
 #container {
-  margin:0 auto;  /* 화면 중앙에 배치 */
-  width:100%;    /* 너비 */
-  height:75px;  
-  background-color:black;
+  position: relative;
+  width: 1130px;
+  padding: 20px 30px;
+  margin: 0 auto;
 }
 
-/*********************************/
 /* 헤더 영역 - 로고와 내비게이션 */
-/*********************************/
-
-header {height: 75px; background-color: black; border: none; width: 100%; z-index: 9999; top:0; left: 0%;position:fixed; top : 0;}
+header {height: 75px; background-color: black; border: none; width: 100%; z-index: 9999; top:0; left: 0%; position: relative; top : 0;}
 body{width: 1920px; background-color: rgb(190, 190, 190);}
 h1 {display: block; padding-left: 320px; font-size: 25px; font-family: jua; 
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* 본문 속성 */
@@ -33,6 +30,13 @@ p{display: block; padding-left: 320px; font-size: 25px; font-family: jua;
 #topMenu > li > a:hover {color: rgb(190, 190, 190);}
 
 /* 본문 */
+#cont_left{
+  float: left;
+  width: 750px;
+}
+#cont_right{
+  float: right;
+}
 #btnP1 button:hover{background-color: rgb(140, 140, 140);}
 #btnP1 {position: fixed; left: 320px; position: fixed; top:100px;
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* Page1 버튼 속성*/
@@ -85,11 +89,6 @@ main h3 {
 }
 .schedule ul li { 
   line-height: 2;
-}
-
-#login_wrapper{
-  position: absolute; top: 50%;
-  position: absolute; left: 50%;
 }
 
 

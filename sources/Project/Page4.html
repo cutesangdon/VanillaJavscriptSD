@@ -48,6 +48,10 @@
     function end(){
       time=(time+1)-time;
     }
+    function restart(){
+      alert("프로그램이 다시시작됩니다.");
+      location.reload();
+    }
     if(time>1){
     var Interval= setInterval("minus()",1000  )
     }
@@ -55,7 +59,7 @@
       var hour = Math.floor((time-1)/3600); /* 잔여 시간 출력 영역*/
       time--;
       utime++;
-      document.getElementById("remaining hour").innerHTML = "잔여 시간 "+Math.floor(hour)+" :";
+      document.getElementById("remaining hour").innerHTML = "잔여  시간 "+Math.floor(hour)+" :";
       if((time/60)-(hour*60)<60,(time/60)-(hour*60)>9){
         document.getElementById("remaining min").innerHTML = Math.floor((time/60)-(hour*60))+" :";
       }
@@ -92,7 +96,8 @@
 <div id="btnP4">
   <button onclick="thirtyM()"><h3>30분 추가</h3></button><br/>
   <button onclick="oneH()"><h3>1시간 추가</h3></button><br/>
-  <button onclick="end()"><h3>시간 종료</h3></button>
+  <button onclick="end()"><h3>시간 종료</h3></button><br/>
+  <button onclick="restart()"><h3>다시 시작</h3></button>
 </div>
 <footer>    
   <section id="bottomMenu">

@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="css/Style.css">
 </head>
 <body onload="init()">
-<div id="container">
 <header>
   <div id="wrapper">
     <a href="mainpage.html">
@@ -22,74 +21,21 @@
   </nav>
   </div>
 </header>
-</div>
-<div id="checkbox">
-<br><input type='checkbox'
-       name='person' 
-       value='zero'/> 0
-<br />
-<input type='checkbox' 
-       name='person' 
-       value='one' /> 1
-<br />
-<input type='checkbox' 
-       name='person' 
-       value='two' /> 2
-<br />
-<input type='checkbox' 
-       name='person' 
-       value='three' /> 3
-<br />
-<input type='checkbox' 
-       name='person' 
-       value='four' /> 4
-<br />
-<input type='checkbox' 
-       name='person' 
-       value='five' /> 5
-<br />
-<input type='checkbox' 
-       name='person' 
-       value='six' /> 6
-<br />
-<input type='checkbox' 
-       name='person' 
-       value='seven' /> 7
-<br />
-<input type='checkbox' 
-       name='person' 
-       value='eight' /> 8
-<br />
-<input type='checkbox' 
-       name='person' 
-       value='nine' /> 9
-<br />
-<input type='checkbox' 
-       name='person' 
-       value='ten' /> 10
-</div>
-<div id="btnP2">
-  <button onclick="Button_click()"><h3>BUTTON</h3></button>
+<div id="container">
+  <div id="cont_left">
+
+  </div>
+  <div id="cont_right">
+    <div id="login">
+      <form id="log_in">
+        ID : <input type="text" name="id"><br/>
+        PW : <input type="password" name="pwd">
+      </form>
+    </div>
+  </div>
 </div>
 <script>
-       function Button_click() {
-            var msg = "출력\n";
-            var checkBoxes = document.getElementsByName("person");
-
-            for (var i = 0; i < checkBoxes.length; i++){
-                if (checkBoxes[i].checked) 
-                {msg += ("- " + checkBoxes[i].value + "\n");}
-            } alert(msg)
-            location.reload();
-       }
-       function selectAll(selectAll)  {
-              const checkboxes 
-              = document.getElementsByName('person');
-  
-              checkboxes.forEach((checkbox) => {
-              checkbox.checked = selectAll.checked;
-              })
-       }
+       
 </script>
 <footer>    
        <section id="bottomMenu">
