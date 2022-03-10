@@ -14,7 +14,7 @@
     <nav>
       <ul id="topMenu">
           <li><a href="page1.html">MENU</a></li>
-          <li><a href="page2.html">Select</a></li>
+          <li><a href="page2.html">MyGun</a></li>
           <li><a href="page3.html">SelAll</a></li>
           <li><a href="Page4.html">PC</a></li>
       </ul>
@@ -23,9 +23,8 @@
   </header>
 <div id="container">
   <div id="cont_left">
-    <p>테스트</p>
     <div id ="spantext">
-      <h3><br>기본 1시간 입니다.</h3>
+      <h3>기본 1시간 입니다.</h3>
       <span id = "remaining hour">잔여</span>
       <span id = "remaining min">시간</span>
       <span id = "remaining sec"></span>
@@ -71,7 +70,7 @@
       location.reload();
     }
     if(time>1){
-    var Interval= setInterval("minus()",1000  )
+    var Interval= setInterval("minus()",1000)
     }
     function minus(){
       var hour = Math.floor((time-1)/3600); /* 잔여 시간 출력 영역*/

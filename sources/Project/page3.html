@@ -14,7 +14,7 @@
     <nav>
       <ul id="topMenu">
         <li><a href="page1.html">MENU</a></li>
-        <li><a href="page2.html">Select</a></li>
+        <li><a href="page2.html">MyGun</a></li>
         <li><a href="page3.html">SelAll</a></li>
         <li><a href="Page4.html">PC</a></li>
        </ul>
@@ -22,71 +22,35 @@
     </div>
   </header>
 <div id="container">
-       <div id="cont_left">
-         <p>테스트</p>
-         <div id="checkbox">
-              <br><input type='checkbox'
-                     name='all\' 
-                     value='selectall'
-                     onclick='selectAll(this)'/> <b>Select All</b>
-              <br />
-              <input type='checkbox'
-                     name='person' 
-                     value='zero'/> 0
-              <br />
-              <input type='checkbox' 
-                     name='person' 
-                     value='one' /> 1
-              <br />
-              <input type='checkbox' 
-                     name='person' 
-                     value='two' /> 2
-              <br />
-              <input type='checkbox' 
-                     name='person' 
-                     value='three' /> 3
-              <br />
-              <input type='checkbox' 
-                     name='person' 
-                     value='four' /> 4
-              <br />
-              <input type='checkbox' 
-                     name='person' 
-                     value='five' /> 5
-              <br />
-              <input type='checkbox' 
-                     name='person' 
-                     value='six' /> 6
-              <br />
-              <input type='checkbox' 
-                     name='person' 
-                     value='seven' /> 7
-              <br />
-              <input type='checkbox' 
-                     name='person' 
-                     value='eight' /> 8
-              <br />
-              <input type='checkbox' 
-                     name='person' 
-                     value='nine' /> 9
-              <br />
-              <input type='checkbox' 
-                     name='person' 
-                     value='ten' /> 10
-              </div>
-              <div id="btnP3">
-              <button onclick="Button_click()"><h3>BUTTON</h3></button>
-              </div>
-       </div>
-       <div id="cont_right">
-         <div id="login">
-           <form id="log_in">
-             ID : <input type="text" name="id"><br/>
-             PW : <input type="password" name="pwd">
-           </form>
-         </div>
-       </div>
-     </div>
+  <div id="cont_left">
+    <div id="checkbox">
+      <input type='checkbox' name='all\' value='selectall' onclick='selectAll(this)'/> 
+      <b>Select All</b></br>
+      <input type='checkbox' name='person' value='zero' > 0 </br>
+      <input type='checkbox' name='person' value='one'  > 1 </br>
+      <input type='checkbox' name='person' value='two'  > 2 </br>
+      <input type='checkbox' name='person' value='three'> 3 </br>
+      <input type='checkbox' name='person' value='four' > 4 </br>
+      <input type='checkbox' name='person' value='five' > 5 </br>
+      <input type='checkbox' name='person' value='six'  > 6 </br>
+      <input type='checkbox' name='person' value='seven'> 7 </br>
+      <input type='checkbox' name='person' value='eight'> 8 </br>
+      <input type='checkbox' name='person' value='nine' > 9 </br>
+      <input type='checkbox' name='person' value='ten'  > 10
+    </div>
+    <div id="btnP3">
+      <button onclick="Button_click()"><h3>BUTTON</h3></button>
+    </div>
+  </div>
+  <div id="cont_right">
+    <div id="login">
+      <form id="log_in">
+        ID : <input type="text" name="id"><br/>
+        PW : <input type="password" name="pwd">
+      </form>
+    </div>
+  </div>
+</div>
 </div>
 <script>
   function Button_click() {
@@ -100,13 +64,11 @@
             location.reload();
        }
    function selectAll(selectAll)  {
-  const checkboxes 
-       = document.getElementsByName('person');
-  
-  checkboxes.forEach((checkbox) => {
+    const checkboxes = document.getElementsByName('person');
+    checkboxes.forEach((checkbox) => {
     checkbox.checked = selectAll.checked;
-  })
-}
+    })
+  }
 </script>
 <footer>    
        <section id="bottomMenu">

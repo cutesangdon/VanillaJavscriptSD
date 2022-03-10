@@ -2,7 +2,7 @@
 <html lang = "ko">
 <head>
   <meta charset="UTF-8">
-  <title>Select</title>
+  <title>MyGun</title>
   <link rel="stylesheet" href="css/Style.css">
 </head>
 <body onload="init()">
@@ -14,7 +14,7 @@
   <nav>
     <ul id="topMenu">
       <li><a href="page1.html">MENU</a></li>
-      <li><a href="page2.html">Select</a></li>
+      <li><a href="page2.html">MyGun</a></li>
       <li><a href="page3.html">SelAll</a></li>
       <li><a href="Page4.html">PC</a></li>
     </ul>
@@ -22,11 +22,21 @@
   </div>
 </header>
 <div id="container">
-  <div id="cont_left">
-    <p>테스트</p>
+  <div id="cont_leftp2">
+    <div id="onebox" >  1번</div>
+    <div id="twobox" >  2번</div>
+    <div id="threebox" >3번</div>
+    <div id="fourbox" > 4번</div>
+    <div id="fivebox" > 5번</div>
+    <div id="sixbox" >  6번</div>
+    <div id="sevenbox" >7번</div>
+    <div id="eightbox" >8번</div>
+    <div id="ninebox" > 9번</div>
+    <div id="tenbox" > 10번</div>
+    <button onclick="Start()">시작</button>
   </div>
   <div id="cont_right">
-    <div id="login">
+    <div id="login">  
       <form id="log_in">
         ID : <input type="text" name="id"><br/>
         PW : <input type="password" name="pwd">
@@ -35,7 +45,157 @@
   </div>
 </div>
 <script>
-       
+  function Start(){
+    var Interval= setInterval("run()",speed)
+  }
+    var numrand = 0;
+    var Breaknum = Math.floor(Math.random()*(100-91+1)) + 91;
+    var speed = 50;
+  function run(){
+    if(numrand==Breaknum){
+      clearInterval(Interval);
+    }
+    numrand ++;
+    if(numrand == 1||numrand ==11||numrand ==21||numrand ==31||numrand ==41||numrand ==51||numrand ==61||numrand ==71||numrand ==81||numrand ==91){
+    document.getElementById("onebox").style.backgroundColor="#222";
+    document.getElementById("twobox").style.backgroundColor="#ddd";
+    document.getElementById("threebox").style.backgroundColor="#ddd";
+    document.getElementById("fourbox").style.backgroundColor="#ddd";
+    document.getElementById("fivebox").style.backgroundColor="#ddd";
+    document.getElementById("sixbox").style.backgroundColor="#ddd";
+    document.getElementById("sevenbox").style.backgroundColor="#ddd";
+    document.getElementById("eightbox").style.backgroundColor="#ddd";
+    document.getElementById("ninebox").style.backgroundColor="#ddd";
+    document.getElementById("tenbox").style.backgroundColor="#ddd";
+    }
+    if(numrand == 2||numrand ==12||numrand ==22||numrand ==32||numrand ==42||numrand ==52||numrand ==62||numrand ==72||numrand ==82||numrand ==92){
+    document.getElementById("onebox").style.backgroundColor="#ddd";
+    document.getElementById("twobox").style.backgroundColor="#222";
+    document.getElementById("threebox").style.backgroundColor="#ddd";
+    document.getElementById("fourbox").style.backgroundColor="#ddd";
+    document.getElementById("fivebox").style.backgroundColor="#ddd";
+    document.getElementById("sixbox").style.backgroundColor="#ddd";
+    document.getElementById("sevenbox").style.backgroundColor="#ddd";
+    document.getElementById("eightbox").style.backgroundColor="#ddd";
+    document.getElementById("ninebox").style.backgroundColor="#ddd";
+    document.getElementById("tenbox").style.backgroundColor="#ddd";
+  }
+  if(numrand == 3||numrand ==13||numrand ==23||numrand ==33||numrand ==43||numrand ==53||numrand ==63||numrand ==73||numrand ==83||numrand ==93){
+    document.getElementById("onebox").style.backgroundColor="#ddd";
+    document.getElementById("twobox").style.backgroundColor="#ddd";
+    document.getElementById("threebox").style.backgroundColor="#222";
+    document.getElementById("fourbox").style.backgroundColor="#ddd";
+    document.getElementById("fivebox").style.backgroundColor="#ddd";
+    document.getElementById("sixbox").style.backgroundColor="#ddd";
+    document.getElementById("sevenbox").style.backgroundColor="#ddd";
+    document.getElementById("eightbox").style.backgroundColor="#ddd";
+    document.getElementById("ninebox").style.backgroundColor="#ddd";
+    document.getElementById("tenbox").style.backgroundColor="#ddd";
+  }
+  if(numrand == 4||numrand ==14||numrand ==24||numrand ==34||numrand ==44||numrand ==54||numrand ==64||numrand ==74||numrand ==84||numrand ==94){
+    document.getElementById("onebox").style.backgroundColor="#ddd";
+    document.getElementById("twobox").style.backgroundColor="#ddd";
+    document.getElementById("threebox").style.backgroundColor="#ddd";
+    document.getElementById("fourbox").style.backgroundColor="#222";
+    document.getElementById("fivebox").style.backgroundColor="#ddd";
+    document.getElementById("sixbox").style.backgroundColor="#ddd";
+    document.getElementById("sevenbox").style.backgroundColor="#ddd";
+    document.getElementById("eightbox").style.backgroundColor="#ddd";
+    document.getElementById("ninebox").style.backgroundColor="#ddd";
+    document.getElementById("tenbox").style.backgroundColor="#ddd";
+  }
+  if(numrand == 5||numrand ==15||numrand ==25||numrand ==35||numrand ==45||numrand ==55||numrand ==65||numrand ==75||numrand ==85||numrand ==95){
+    document.getElementById("onebox").style.backgroundColor="#ddd";
+    document.getElementById("twobox").style.backgroundColor="#ddd";
+    document.getElementById("threebox").style.backgroundColor="#ddd";
+    document.getElementById("fourbox").style.backgroundColor="#ddd";
+    document.getElementById("fivebox").style.backgroundColor="#222";
+    document.getElementById("sixbox").style.backgroundColor="#ddd";
+    document.getElementById("sevenbox").style.backgroundColor="#ddd";
+    document.getElementById("eightbox").style.backgroundColor="#ddd";
+    document.getElementById("ninebox").style.backgroundColor="#ddd";
+    document.getElementById("tenbox").style.backgroundColor="#ddd";
+  }
+  if(numrand == 6||numrand ==16||numrand ==26||numrand ==36||numrand ==46||numrand ==56||numrand ==66||numrand ==76||numrand ==86||numrand ==96){
+    document.getElementById("onebox").style.backgroundColor="#ddd";
+    document.getElementById("twobox").style.backgroundColor="#ddd";
+    document.getElementById("threebox").style.backgroundColor="#ddd";
+    document.getElementById("fourbox").style.backgroundColor="#ddd";
+    document.getElementById("fivebox").style.backgroundColor="#ddd";
+    document.getElementById("sixbox").style.backgroundColor="#222";
+    document.getElementById("sevenbox").style.backgroundColor="#ddd";
+    document.getElementById("eightbox").style.backgroundColor="#ddd";
+    document.getElementById("ninebox").style.backgroundColor="#ddd";
+    document.getElementById("tenbox").style.backgroundColor="#ddd";
+  }
+  if(numrand == 7||numrand ==17||numrand ==27||numrand ==37||numrand ==47||numrand ==57||numrand ==67||numrand ==77||numrand ==87||numrand ==97){
+    document.getElementById("onebox").style.backgroundColor="#ddd";
+    document.getElementById("twobox").style.backgroundColor="#ddd";
+    document.getElementById("threebox").style.backgroundColor="#ddd";
+    document.getElementById("fourbox").style.backgroundColor="#ddd";
+    document.getElementById("fivebox").style.backgroundColor="#ddd";
+    document.getElementById("sixbox").style.backgroundColor="#ddd";
+    document.getElementById("sevenbox").style.backgroundColor="#222";
+    document.getElementById("eightbox").style.backgroundColor="#ddd";
+    document.getElementById("ninebox").style.backgroundColor="#ddd";
+    document.getElementById("tenbox").style.backgroundColor="#ddd";
+  }
+  if(numrand == 8||numrand ==18||numrand ==28||numrand ==38||numrand ==48||numrand ==58||numrand ==68||numrand ==78||numrand ==88||numrand ==98){
+    document.getElementById("onebox").style.backgroundColor="#ddd";
+    document.getElementById("twobox").style.backgroundColor="#ddd";
+    document.getElementById("threebox").style.backgroundColor="#ddd";
+    document.getElementById("fourbox").style.backgroundColor="#ddd";
+    document.getElementById("fivebox").style.backgroundColor="#ddd";
+    document.getElementById("sixbox").style.backgroundColor="#ddd";
+    document.getElementById("sevenbox").style.backgroundColor="#ddd";
+    document.getElementById("eightbox").style.backgroundColor="#222";
+    document.getElementById("ninebox").style.backgroundColor="#ddd";
+    document.getElementById("tenbox").style.backgroundColor="#ddd";
+  }
+  if(numrand == 9||numrand ==19||numrand ==29||numrand ==39||numrand ==49||numrand ==59||numrand ==69||numrand ==79||numrand ==89||numrand ==99){
+    document.getElementById("onebox").style.backgroundColor="#ddd";
+    document.getElementById("twobox").style.backgroundColor="#ddd";
+    document.getElementById("threebox").style.backgroundColor="#ddd";
+    document.getElementById("fourbox").style.backgroundColor="#ddd";
+    document.getElementById("fivebox").style.backgroundColor="#ddd";
+    document.getElementById("sixbox").style.backgroundColor="#ddd";
+    document.getElementById("sevenbox").style.backgroundColor="#ddd";
+    document.getElementById("eightbox").style.backgroundColor="#ddd";
+    document.getElementById("ninebox").style.backgroundColor="#222";
+    document.getElementById("tenbox").style.backgroundColor="#ddd";
+  }if(numrand == 10||numrand ==20||numrand ==30||numrand ==40||numrand ==50||numrand ==60||numrand ==70||numrand ==80||numrand ==90||numrand ==100){
+    document.getElementById("onebox").style.backgroundColor="#ddd";
+    document.getElementById("twobox").style.backgroundColor="#ddd";
+    document.getElementById("threebox").style.backgroundColor="#ddd";
+    document.getElementById("fourbox").style.backgroundColor="#ddd";
+    document.getElementById("fivebox").style.backgroundColor="#ddd";  
+    document.getElementById("sixbox").style.backgroundColor="#ddd";
+    document.getElementById("sevenbox").style.backgroundColor="#ddd";
+    document.getElementById("eightbox").style.backgroundColor="#ddd";
+    document.getElementById("ninebox").style.backgroundColor="#ddd";
+    document.getElementById("tenbox").style.backgroundColor="#222";
+  }
+    function oneR(){alert("1번 당첨");location.reload();}
+    if(numrand==Breaknum&&numrand==91){setTimeout(oneR,200);}
+    function twoR(){alert("2번 당첨");location.reload();}
+    if(numrand==Breaknum&&numrand==92){setTimeout(twoR,200);}
+    function threeR(){alert("3번 당첨");location.reload();}
+    if(numrand==Breaknum&&numrand==93){setTimeout(threeR,200);}
+    function fourR(){alert("4번 당첨");location.reload();}
+    if(numrand==Breaknum&&numrand==94){setTimeout(fourR,200);}
+    function fiveR(){alert("5번 당첨");location.reload();}
+    if(numrand==Breaknum&&numrand==95){setTimeout(fiveR,200);}
+    function sixR(){alert("6번 당첨");location.reload();}
+    if(numrand==Breaknum&&numrand==96){setTimeout(sixR,200);}
+    function sevenR(){alert("7번 당첨");location.reload();}
+    if(numrand==Breaknum&&numrand==97){setTimeout(sevenR,200);}
+    function eightR(){alert("8번 당첨");location.reload();}
+    if(numrand==Breaknum&&numrand==98){setTimeout(eightR,200);}
+    function nineR(){alert("9번 당첨");location.reload();}
+    if(numrand==Breaknum&&numrand==99){setTimeout(nineR,200);}
+    function tenR(){alert("10번 당첨");location.reload();}
+    if(numrand==Breaknum&&numrand==100){setTimeout(tenR,200);}
+}
 </script>
 <footer>    
        <section id="bottomMenu">
