@@ -12,7 +12,7 @@ ul {list-style: none;}
 }
 
 /* 헤더 영역 - 로고와 내비게이션 */
-header {height: 75px; background-color: #3B8989; border: none; width: 100%; z-index: 9999; top:0; left: 0%; position: relative; top : 0;}
+header {height: 75px; background-color: #8F8EBF; border: none; width: 100%; z-index: 9999; top:0; left: 0%; position: relative; top : 0;}
 body{width: 1920px; background-color: rgb(190, 190, 190);}
 h1 {display: block; padding-left: 320px; font-size: 25px; font-family: jua; 
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* 본문 속성 */
@@ -45,6 +45,7 @@ p{display: block; font-size: 25px; font-family: jua;
   background-color: #ddd;
   text-align: center;
   margin-right: 50px;
+  font-family: jua;
 }
 #cont_right{
   float: right;
@@ -117,7 +118,7 @@ main h3 {
 /*   푸터 영역    */
 /******************/
 
-footer{width:100%; height:80px; background-color:#3B8989; border-top:1px solid #222;  position:fixed; bottom : 0;}
+footer{width:100%; height:80px; background-color:#8F8EBF; position:fixed; bottom : 0;}
 #bottomMenu{
   width:100%;
   height:45px;
