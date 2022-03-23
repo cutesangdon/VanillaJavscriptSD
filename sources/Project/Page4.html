@@ -24,7 +24,6 @@
 <div id="container">
   <div id="cont_left">
     <div id ="spantext">
-      <h3>기본 1시간 입니다.</h3>
       <span id = "remaining hour">잔여</span>
       <span id = "remaining min">시간</span>
       <span id = "remaining sec"></span>
@@ -35,10 +34,16 @@
       <span id = "Alert"></span>
     </div>
     <div id="btnP4">
+      <input type="button" value="서비스 시작" id="page4_TStart" onclick="time_start()"><br/>
+      <input type="button" value="30분 추가" id="page4_thirtyM" onclick="thirtyM()"><br/>
+      <input type="button" value="1시간 추가" id="page4_oneH" onclick="oneH()"><br/>
+      <input type="button" value="시간 종료" id="page4_end" onclick="end()"><br/>
+      <input type="button" value="초기화" id="page4_reset" onclick="reset()"><br/><br/>
+      <button onclick="time_start()"><h3>서비스 시작</h3></button><br/>
       <button onclick="thirtyM()"><h3>30분 추가</h3></button><br/>
       <button onclick="oneH()"><h3>1시간 추가</h3></button><br/>
       <button onclick="end()"><h3>시간 종료</h3></button><br/>
-      <button onclick="restart()"><h3>다시 시작</h3></button>
+      <button onclick="reset()"><h3>초기화</h3></button>
     </div>
   </div>
   <div id="cont_right">
@@ -65,14 +70,18 @@
     function end(){
       time=(time+1)-time;
     }
-    function restart(){
-      alert("시스템이 다시시작됩니다.");
+    function reset(){
+      alert("시간이 초기화 됩니다.");
       location.reload();
     }
-    if(time>1){
-    var Interval= setInterval("minus()",1000)
+    function time_start(){
+      var Interval= setInterval("minus()",5)
     }
     function minus(){
+      if(time==0){ /* 타이머 종료 */
+        clearInterval(Interval)
+        alert("시간이 종료되었습니다.")
+      }
       var hour = Math.floor((time-1)/3600); /* 잔여 시간 출력 영역*/
       time--;
       utime++;
@@ -103,10 +112,6 @@
       }
       if(utime-(usemin*60)<10){
         document.getElementById("used sec").innerHTML = "0"+ (utime-(usemin*60));
-      }
-      if(time==0){ /* 타이머 종료 */
-        clearInterval(Interval)
-        alert("시간이 종료되었습니다.")
       }
     }
   </script>
