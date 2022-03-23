@@ -18,7 +18,6 @@ h1 {display: block; padding-left: 320px; font-size: 25px; font-family: jua;
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* 본문 속성 */
 h2 {color:#ddd; line-height:75px; float: left; font-size: 30px; position: fixed; left: 320px;
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* 로고 속성 */
-h3 {font-family: jua;} /* 폰트만 적용*/
 a {-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* 메뉴 및 링크 속성 */
 p{display: block; font-size: 25px; font-family: jua; 
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none}
@@ -62,56 +61,44 @@ p{display: block; font-size: 25px; font-family: jua;
   float: right;
   text-align: right;
 }
-#btnP1 button:hover{background-color: rgb(140, 140, 140);}
-#btnP1 {-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* Page1 버튼 속성*/
+/* Page1 버튼 속성*/
+#page1_btn input:hover{background-color: rgb(140, 140, 140);}
+#page1_btn input{
+  font-family: jua; font-size: 16px; 
+  margin: 5px 5px;
+  -webkit-user-select:none; -moz-user-select:none; 
+  -ms-user-select:none; user-select:none;
+}
+
+
+
 #btnP2 button:hover{background-color: rgb(140, 140, 140);}
 #btnP2 {position: fixed; left: 320px; position: fixed; top:290px;
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* Page2 버튼 속성*/
-#btnP3 button:hover{background-color: rgb(140, 140, 140);}
-#btnP3{-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* Page3 버튼 속성*/
+
+
+
+/* Page3 버튼 속성*/
+#page3_btn input:hover{background-color: rgb(140, 140, 140);}
+#page3_btn input{
+  font-family: jua; font-size: 16px; 
+  margin: 5px 5px;
+  -webkit-user-select:none; -moz-user-select:none;
+  -ms-user-select:none; user-select:none
+}
+
 #btnP4 button:hover{background-color: rgb(140, 140, 140);}
 #btnP4 {-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* Page4 버튼 속성*/
 
-#checkbox{font-family: jua;
-  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* 체크 박스 속성*/
+ /* 체크 박스 속성*/
+#checkbox{
+  font-family: jua;
+  margin: 5px 5px;
+  -webkit-user-select:none; -moz-user-select:none;
+  -ms-user-select:none; user-select:none
+}
 #spantext{font-size: 30px; font-family: jua;
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* PC Page 본문 속성 */
-.contents {
-  width:1000px;
-  margin:50px auto;  
-}
-main > section {
-  margin-top:60px;  
-}
-main h2 {    
-  font-size:1.5em;
-  line-height: 2.5;
-}
-main div {
-  margin-top:20px;
-}
-main h3 {
-  font-size:1.2em;
-  line-height:2.2;
-}
-.detail p {
-  line-height: 2.0;
-  color:#222;
-}
-.detail > img {
-  float:left; 
-  margin-right:50px;
-  border-radius:20px;
-}
-.schedule h4 {
-  font-size:1.2em;
-}
-.schedule ul {
-  list-style: none;
-}
-.schedule ul li { 
-  line-height: 2;
-}
 
 
 /******************/
@@ -223,4 +210,41 @@ footer{width:100%; height:80px; background-color:#8F8EBF; position:fixed; bottom
   width: 128px;
   height: 50px;
   border:1px solid #222;
+}
+/* 아직 안씀 */
+.contents {
+  width:1000px;
+  margin:50px auto;  
+}
+main > section {
+  margin-top:60px;  
+}
+main h2 {    
+  font-size:1.5em;
+  line-height: 2.5;
+}
+main div {
+  margin-top:20px;
+}
+main h3 {
+  font-size:1.2em;
+  line-height:2.2;
+}
+.detail p {
+  line-height: 2.0;
+  color:#222;
+}
+.detail > img {
+  float:left; 
+  margin-right:50px;
+  border-radius:20px;
+}
+.schedule h4 {
+  font-size:1.2em;
+}
+.schedule ul {
+  list-style: none;
+}
+.schedule ul li { 
+  line-height: 2;
 }

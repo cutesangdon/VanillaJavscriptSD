@@ -38,8 +38,8 @@
       <input type='checkbox' name='person' value='nine' > 9 </br>
       <input type='checkbox' name='person' value='ten'  > 10
     </div>
-    <div id="btnP3">
-      <button onclick="Button_click()"><h3>BUTTON</h3></button>
+    <div id="page3_btn">
+      <input type="button" value="선택" id="page3_select" onclick="Button_click()">
     </div>
   </div>
   <div id="cont_right">
@@ -52,24 +52,7 @@
   </div>
 </div>
 </div>
-<script>
-  function Button_click() {
-            var msg = "출력\n";
-            var checkBoxes = document.getElementsByName("person");
-
-            for (var i = 0; i < checkBoxes.length; i++){
-                if (checkBoxes[i].checked) 
-                {msg += ("- " + checkBoxes[i].value + "\n");}
-            } alert(msg)
-            location.reload();
-       }
-   function selectAll(selectAll)  {
-    const checkboxes = document.getElementsByName('person');
-    checkboxes.forEach((checkbox) => {
-    checkbox.checked = selectAll.checked;
-    })
-  }
-</script>
+<script src="main.js"></script>
 <footer>    
        <section id="bottomMenu">
          <ul>

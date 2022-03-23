@@ -24,8 +24,8 @@
   </header>
 <div id="container">
   <div id="cont_left">
-    <div id="btnP1">
-      <button onclick="what()"><h3>shuffle</h3></button>
+    <div id="page1_btn">
+      <input type="button" value="랜덤" id="page1_what" onclick="shuffle()">
     </div>
   </div>
   <div id="cont_right">
@@ -37,29 +37,18 @@
     </div>
   </div>
 </div>
-  <script>
-    var food = ['메뉴1','메뉴2','메뉴3','메뉴4','메뉴5','메뉴6','메뉴7','메뉴8','메뉴9','메뉴10'
-    ,'메뉴11','메뉴12','메뉴13','메뉴14','메뉴15','메뉴16','메뉴17']
-    var randnum = (Math.random()*17);
-    var foodnum = (Math.floor(randnum));
-    
-
-    function what(){
-      alert(food[foodnum]);
-      location.reload();
-    }
-  </script>
-  <footer>    
-    <section id="bottomMenu">
-      <ul>
-        <li><a href="#">회사소개</a></li>
-        <li><a href="#">인재채용</a></li>
-        <li><a href="#">이용약관</a></li>
-        <li><a href="#">개인정보처리방침</a></li>
-        <li><a href="#">사이트맵</a></li>
-        <li><a href="#">고객센터</a></li>
-      </ul>
-    </section>   
-  </footer>
+<script src="main.js"></script>
+<footer>
+  <section id="bottomMenu">
+    <ul>
+      <li><a href="#">회사소개</a></li>
+      <li><a href="#">인재채용</a></li>
+      <li><a href="#">이용약관</a></li>
+      <li><a href="#">개인정보처리방침</a></li>
+      <li><a href="#">사이트맵</a></li>
+      <li><a href="#">고객센터</a></li>
+    </ul>
+  </section>   
+</footer>
 </body>
 </html>
