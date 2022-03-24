@@ -64,7 +64,7 @@ p{display: block; font-size: 25px; font-family: jua;
 /* Page1 버튼 속성*/
 #page1_btn input{
   font-family: jua; font-size: 16px; 
-  margin: 5px 5px;
+  margin: 5px;
   -webkit-user-select:none; -moz-user-select:none; 
   -ms-user-select:none; user-select:none;
 }
@@ -78,7 +78,7 @@ p{display: block; font-size: 25px; font-family: jua;
 }
 #btn input{
   font-family: jua; font-size: 16px; 
-  margin: 5px 5px;
+  margin: 5px;
   -webkit-user-select:none; -moz-user-select:none;
   -ms-user-select:none; user-select:none
 }
@@ -89,7 +89,7 @@ p{display: block; font-size: 25px; font-family: jua;
 #onebox,#twobox,#threebox,#fourbox,#fivebox,
 #sixbox,#sevenbox,#eightbox,#ninebox,#tenbox{
   display: inline-block;
-  margin: 5px 5px;
+  margin: 5px;
   background-color: rgb(255, 255, 255);
   width: 128px;
   height: 50px;
@@ -100,13 +100,13 @@ p{display: block; font-size: 25px; font-family: jua;
  /* 체크 박스 속성*/
 #checkbox{
   font-family: jua;
-  margin: 5px 5px;
+  margin: 5px;
   -webkit-user-select:none; -moz-user-select:none;
   -ms-user-select:none; user-select:none
 }
 #spantext{
   font-size: 36px; font-family: jua;
-  margin: 5px 5px;
+  margin:  5px;
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* PC Page 본문 속성 */
 
 
