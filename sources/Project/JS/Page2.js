@@ -1,7 +1,11 @@
 function Basic(){
+  document.getElementById("disab1").setAttribute('disabled',true);
+  document.getElementById("disab2").setAttribute('disabled',true);
   var Interval= setInterval("basicrun()",speed)
 }
 function Hightech(){
+  document.getElementById("disab1").setAttribute('disabled',true);
+  document.getElementById("disab2").setAttribute('disabled',true);
   var Interval= setInterval("highrun()",speed)
 }
 var NRD = 0;   /* 틱당 1증가, 백그라운드 색 이동, 결과 출력에 사용 */
