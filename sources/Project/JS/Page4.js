@@ -17,7 +17,7 @@ function reset(){
 }
 function time_start(){
   document.getElementById("disab1").setAttribute('disabled',true);
-  var Interval= setInterval("minus()",5)
+  var Interval= setInterval("minus()",1000)
 }
 function minus(){
   if(time==0){ /* 타이머 종료 */
