@@ -9,6 +9,8 @@ function oneH(){
 }
 function end(){
   document.getElementById("disab4").setAttribute('disabled',false);
+  document.getElementById("disab3").setAttribute('disabled',false);
+  document.getElementById("disab2").setAttribute('disabled',false);
   time=(time+1)-time;
 }
 function reset(){
@@ -16,12 +18,18 @@ function reset(){
   location.reload();
 }
 function time_start(){
-  document.getElementById("disab1").setAttribute('disabled',true);
+  document.getElementById("disab1").setAttribute('disabled',false);
+  document.getElementById("disab2").removeAttribute('disabled');
+  document.getElementById("disab3").removeAttribute('disabled');
+  document.getElementById("disab4").removeAttribute('disabled');
   var Interval= setInterval("minus()",1000)
 }
 function minus(){
   if(time==0){ /* 타이머 종료 */
     document.getElementById("disab4").setAttribute('disabled',false);
+    document.getElementById("remaining hour").innerHTML = "시간이"
+    document.getElementById("remaining min").innerHTML = " 종료 되었습니다"
+    document.getElementById("remaining sec").innerHTML = "."
     clearInterval(Interval)
     alert("시간이 종료되었습니다.")
   }

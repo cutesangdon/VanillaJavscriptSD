@@ -206,7 +206,10 @@ function highrun(){
       document.getElementById("eightbox").style.backgroundColor="#DAD061";
       document.getElementById("ninebox").style.backgroundColor="#DAD061";
       document.getElementById("tenbox").style.backgroundColor="#DAD061";
-      }
+      document.querySelector("header").setAttribute("style","background: black");
+      document.querySelector("body").setAttribute("style","background: #424242");
+      document.querySelector("footer").setAttribute("style","background: black");
+    }
     if(NRD==2||NRD==12||NRD==22||NRD==32||NRD==42||NRD ==53
     ||NRD==54||NRD==73||NRD==74||NRD==93||NRD==94||NRD==115
     ||NRD==116||NRD==117||NRD==118||NRD==155||NRD==156||NRD==157||NRD==158){
