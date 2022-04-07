@@ -71,29 +71,12 @@ p{display: block; font-size: 25px; font-family: jua;
   float: right;
   text-align: right;
 }
-/* Page1 버튼 속성*/
-#page1_btn input{
-  font-family: jua; font-size: 16px; 
-  margin: 5px;
-  -webkit-user-select:none; -moz-user-select:none; 
-  -ms-user-select:none; user-select:none;
-}
-#resetTEXT{
-  font-family: jua;
-  border-bottom: 2px solid;
-}
-#resetBT1{
-  background-color: #1A73E8;
-  color: white;
-}
-
-
-
 #btn input:hover{
   background-color: rgb(140, 140, 140);
 }
 #btn input{
-  font-family: jua; font-size: 16px; 
+  cursor: pointer;
+  font-family: jua; font-size: 16px;
   margin: 5px;
   -webkit-user-select:none; -moz-user-select:none;
   -ms-user-select:none; user-select:none
@@ -120,10 +103,22 @@ p{display: block; font-size: 25px; font-family: jua;
   -webkit-user-select:none; -moz-user-select:none;
   -ms-user-select:none; user-select:none
 }
+/* PC Page 본문 속성 */
 #spantext{
   font-size: 36px; font-family: jua;
   margin:  5px;
-  -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* PC Page 본문 속성 */
+  -webkit-user-select:none; -moz-user-select:none;
+  -ms-user-select:none; user-select:none
+}
+#resetTEXT{
+  font-family: jua;
+  border-bottom: 2px solid;
+}
+#resetBT1{
+  background-color: #1A73E8;
+  color: white;
+  cursor: pointer;
+}
 
 
 /******************/
