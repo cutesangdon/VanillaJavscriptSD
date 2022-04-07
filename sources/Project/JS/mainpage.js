@@ -23,3 +23,21 @@ document.getElementById("third").innerHTML = "<p>입사 후 " + workingDay + "�
 document.getElementById("fourth").innerHTML = "<p>" + workingYear + "년 " + workDay + "일이 지났습니다.<p>";
 document.getElementById("fifth").innerHTML = "<p>전역일은 " + dischargeYear + "년 " + (dischargeMonth + 1) + "월 " 
 + dischargeDate + "일이며" + "<br>" + dischargeDay + "일이 남았습니다.<p>";
+
+function Button_click() {
+  var msg = "출력\n";
+  var checkBoxes = document.getElementsByName("person");
+
+  for (var i = 0; i < checkBoxes.length; i++){
+    if (checkBoxes[i].checked){
+      msg += ("- " + checkBoxes[i].value + "\n");}
+    }
+  alert(msg)
+  location.reload();
+}
+function selectAll(selectAll)  {
+const checkboxes = document.getElementsByName('person');
+checkboxes.forEach((checkbox) => {
+checkbox.checked = selectAll.checked;
+})
+}
