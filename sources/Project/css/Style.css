@@ -78,8 +78,14 @@ p{display: block; font-size: 25px; font-family: jua;
   -webkit-user-select:none; -moz-user-select:none; 
   -ms-user-select:none; user-select:none;
 }
-
-
+#resetTEXT{
+  font-family: jua;
+  border-bottom: 2px solid;
+}
+#resetBT1{
+  background-color: #1A73E8;
+  color: white;
+}
 
 
 

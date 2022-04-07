@@ -14,22 +14,34 @@ function end(){
   time=(time+1)-time;
 }
 function reset(){
-  alert("시간이 초기화 됩니다.");
+  document.getElementById("disab5").setAttribute('disabled',false);
+  document.getElementById("resetBT1").style.display = "inline";
+  document.getElementById("resetBT2").style.display = "inline";
+  document.getElementById("resetTEXT").style.display = "inline";
+}
+function resetOK(){
   location.reload();
+}
+function resetCC(){
+  document.getElementById("disab5").removeAttribute('disabled');
+  document.getElementById("resetBT1").style.display = "none";
+  document.getElementById("resetBT2").style.display = "none";
+  document.getElementById("resetTEXT").style.display = "none";
 }
 function time_start(){
   document.getElementById("disab1").setAttribute('disabled',false);
   document.getElementById("disab2").removeAttribute('disabled');
   document.getElementById("disab3").removeAttribute('disabled');
   document.getElementById("disab4").removeAttribute('disabled');
-  var Interval= setInterval("minus()",1000)
+  document.getElementById("disab5").removeAttribute('disabled');
+  var Interval= setInterval("timer()",1000)
 }
-function minus(){
+function timer(){
   if(time==0){ /* 타이머 종료 */
     document.getElementById("disab4").setAttribute('disabled',false);
     document.getElementById("remaining hour").innerHTML = "시간이"
-    document.getElementById("remaining min").innerHTML = " 종료 되었습니다"
-    document.getElementById("remaining sec").innerHTML = "."
+    document.getElementById("remaining min").innerHTML = " 종료 되었습니다."
+    document.getElementById("remaining sec").innerHTML = ""
     clearInterval(Interval)
     alert("시간이 종료되었습니다.")
   }
