@@ -48,6 +48,8 @@ function timer(){
   var hour = Math.floor((time-1)/3600); /* 잔여 시간 출력 영역*/
   time--;
   utime++;
+  console.log("잔여시간" + time);
+  console.log("사용시간" + utime);
   document.getElementById("remaining hour").innerHTML = "잔여 시간 "+Math.floor(hour)+" :";
   if((time/60)-(hour*60)<60&&(time/60)-(hour*60)>9){
     document.getElementById("remaining min").innerHTML = Math.floor((time/60)-(hour*60))+" :";
