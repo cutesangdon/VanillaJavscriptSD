@@ -100,10 +100,31 @@ p{display: block; font-size: 25px; font-family: jua;
   height: 50px;
   border:1px solid black;
 }
-
-
+#radioBlock{
+  display: inline-block;
+  margin: 5px;
+  background-color: white;
+  width: 200px;
+  height: 225px;
+  border:1px solid black;
+}
+#radio{
+  font-size: 17px;
+  font-family: jua;
+  margin: 5px;
+  -webkit-user-select:none; -moz-user-select:none;
+  -ms-user-select:none; user-select:none
+}
  /* 체크 박스 속성*/
-#checkbox{
+ #checkboxBlock{
+  display: inline-block;
+  margin: 5px;
+  background-color: white;
+  width: 200px;
+  height: 225px;
+  border:1px solid black;
+ }
+ #checkbox{
   font-family: jua;
   margin: 5px;
   -webkit-user-select:none; -moz-user-select:none;

@@ -31,23 +31,41 @@
         <span id = "fourth"></span>
         <span id = "fifth"></span>
       </div>
-      <div id="checkbox">
-        <input type='checkbox' name='all\' value='selectall' onclick='selectAll(this)'/> 
-        <b>Select All</b></br>
-        <input type='checkbox' name='person' value='zero' > 0 </br>
-        <input type='checkbox' name='person' value='one'  > 1 </br>
-        <input type='checkbox' name='person' value='two'  > 2 </br>
-        <input type='checkbox' name='person' value='three'> 3 </br>
-        <input type='checkbox' name='person' value='four' > 4 </br>
-        <input type='checkbox' name='person' value='five' > 5 </br>
-        <input type='checkbox' name='person' value='six'  > 6 </br>
-        <input type='checkbox' name='person' value='seven'> 7 </br>
-        <input type='checkbox' name='person' value='eight'> 8 </br>
-        <input type='checkbox' name='person' value='nine' > 9 </br>
-        <input type='checkbox' name='person' value='ten'  > 10
+      <div id="checkboxBlock">
+        <div id="checkbox">
+          <input type='checkbox' id='disableSA' name='selectall' value='selectall' onclick='selectAll(this)'/> 
+          <b>Select All</b></br>
+          <input type='checkbox' name='CBbox' value='zero' onclick='checkSelectAll()'> 0 </br>
+          <input type='checkbox' name='CBbox' value='one'  onclick='checkSelectAll()'> 1 </br>
+          <input type='checkbox' name='CBbox' value='two'  onclick='checkSelectAll()'> 2 </br>
+          <input type='checkbox' name='CBbox' value='three'onclick='checkSelectAll()'> 3 </br>
+          <input type='checkbox' name='CBbox' value='four' onclick='checkSelectAll()'> 4 </br>
+          <input type='checkbox' name='CBbox' value='five' onclick='checkSelectAll()'> 5 </br>
+          <input type='checkbox' name='CBbox' value='six'  onclick='checkSelectAll()'> 6 </br>
+          <input type='checkbox' name='CBbox' value='seven'onclick='checkSelectAll()'> 7 </br>
+          <input type='checkbox' name='CBbox' value='eight'onclick='checkSelectAll()'> 8 </br>
+          <input type='checkbox' name='CBbox' value='nine' onclick='checkSelectAll()'> 9 </br>
+          <input type='checkbox' name='CBbox' value='ten'  onclick='checkSelectAll()'> 10</br>
+        </div>
+      </div>
+      <div id="radioBlock">
+        <div id = radio></br>
+          <input type="radio" name='RDbox' value="zero" > 0 </br>
+          <input type="radio" name='RDbox' value="one"  > 1 </br>
+          <input type="radio" name='RDbox' value="two"  > 2 </br>
+          <input type="radio" name='RDbox' value="three"> 3 </br>
+          <input type="radio" name='RDbox' value="four" > 4 </br>
+          <input type="radio" name='RDbox' value="five" > 5 </br>
+          <input type="radio" name='RDbox' value="six"  > 6 </br>
+          <input type="radio" name='RDbox' value="seven"> 7 </br>
+          <input type="radio" name='RDbox' value="eight"> 8 </br>
+          <input type="radio" name='RDbox' value="nine" > 9 </br>
+          <input type="radio" name='RDbox' value="ten" > 10 </br>
+        </div>
       </div>
       <div id="btn">
-        <input type="button" value="선택" onclick="Button_click()">
+        <input type="button" value="체크박스" onclick="Button_click()"><br/>
+        <input type="button" value="랜덤" onclick="shuffle()">
       </div>
     </div>
     <div id="cont_right">
