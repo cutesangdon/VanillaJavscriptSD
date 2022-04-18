@@ -35,6 +35,16 @@ function Button_click() {
   alert(MSG)
   location.reload();
 }
+function Radio_click() {
+  var radioBoxes = document.getElementsByName("RDbox").length;
+  for(var i = 0; i<radioBoxes; i++) {
+    if(document.getElementsByName("RDbox")[i].checked == true) {
+      alert("출력\n- " + document.getElementsByName("RDbox")[i].value);
+      location.reload();
+    }
+  }
+  location.reload();
+}
 function checkSelectAll(){
   const checkboxes
     = document.querySelectorAll('input[name="CBbox"]');
