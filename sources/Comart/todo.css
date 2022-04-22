@@ -1,7 +1,7 @@
 * {margin: 0px; padding: 0px;}
 ul {list-style: none;}
 /* 카드 속성 */
-.todo-card{
+.todo_card{
   margin: 0 auto;
   width: 80%;
   max-width: 500px;
@@ -12,84 +12,53 @@ ul {list-style: none;}
   background-color: #FFFFFF;
   -webkit-user-select:none; -moz-user-select:none;
   -ms-user-select:none; user-select:none;
-} 
-.todo-card-img{
-  margin: 0 auto;
-  width: 80%;
-  max-width: 500px;
-  min-width: 336px;
-  border-radius: 8px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-image: url(img/Property\ 1=card-cover-image-inside.png);
-  -webkit-user-select:none; -moz-user-select:none;
-  -ms-user-select:none; user-select:none
 }
-.todo-card-black{
-  margin: 0 auto;
-  width: 80%;
-  max-width: 500px;
-  min-width: 336px;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  background-color: #373A3C;
-  -webkit-user-select:none; -moz-user-select:none;
-  -ms-user-select:none; user-select:none
-}
-.test1{
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  width: 100%;
-}
-/* 컨텐트 박스 속성 */
-#card1-contents1,#card2-contents1,#card3-contents1,#card8-contents1,
-#card4-contents1,#card5-contents1,#card6-contents1,#card7-contents1{
+/* 컨텐츠 박스 속성 */
+.card_contents1{
   display: inline-block;
-  width: 240px;
+  width: 240px; 
   height: 18px;
   margin-top: 16px;
   margin-left: 20px;
 }
-#card1-contents2,#card2-contents2,#card3-contents2,#card8-contents2,
-#card4-contents2,#card5-contents2,#card6-contents2,#card7-contents2{
+.card_contents2{
   display: inline-block;
   width: calc(100% - 40px);
   margin: 18px 0px;
   padding: 0 20px;
 }
-#top-bar{
-  background-color: #3192CA;
+/* 상단 이미치 & 단색 속성*/
+.top_bar{
   width: 100%;
   height: 30px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
-#top-img img{
+.top_img img{
   max-width: 100%;
   height: auto;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
+/* 하단 이미지 버튼 속성*/
 .menu_img{
   width: 100%;
   height: 20px;
   margin-bottom: 20px;
   display: inline-block;
 }
-#img11,#img21{
+.img1{
   float: left;
   padding-left: 20px;
 }
-#img12,#img13,#img22,#img23{
+.img2{
   float: right;
   margin-left: 20px;
   padding-right: 20px;
 }
   
 /*컨텐츠 박스 폰트 설정 */
-#card1-contents1 p,#card2-contents1 p,#card3-contents1 p
-#card4-contents1 p,#card6-contents1 p{
+.card_contents1 p{
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 550;
@@ -97,17 +66,7 @@ ul {list-style: none;}
   line-height: 18px;
   letter-spacing: 0.05em;
 }
-#card8-contents1 p,#card5-contents1 p,#card7-contents1{
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 550;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-}
-#card1-contents2 p,#card2-contents2 p,#card3-contents2 p,
-#card4-contents2 p,#card6-contents2 p{
+.card_contents2 p{
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
@@ -116,27 +75,12 @@ ul {list-style: none;}
   letter-spacing: 0.05em;
   color: #797979;
 }
-#card8-contents2 p,#card5-contents2 p,#card7-contents2{
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  letter-spacing: 0.05em;
-  color: #FFFFFF;
-}
+/* 시간 영역 */
 .time{
   display: inline-block;
   width: 240px; height: 18px;
   margin-left: 20px;
   margin-bottom: 20px;
-}
-.time-white{
-  display: inline-block;
-  width: 240px; height: 18px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  color: #FFFFFF;
 }
 .time span{
   font-family: 'Noto Sans KR';
@@ -148,54 +92,33 @@ ul {list-style: none;}
   letter-spacing: 0.05em;
   color: #222222;
 }
-.time-white span{
-  font-family: 'Noto Sans KR';
-  font-style: normal;
-  font-weight: 550;
-  font-size: 14px;
-  line-height: 15px;
-  vertical-align: bottom;
-  letter-spacing: 0.05em;
-}
-.time img,.time-white img{
+.time img{
   vertical-align: bottom;
   padding-right: 12px;
 }
+/* 태그 영역 */
 .tag{
-  width: 1000px;
+  width: 100%;
   height: auto;
   min-height: 10px;
+  overflow-x: scroll; 
+  white-space: nowrap;
+  -ms-overflow-style: none;
 }
-.tag-box{
+.tag::-webkit-scrollbar{
+  display:none;
+}
+.tag_box{
   display: inline-block;
   margin-left: 20px;
   margin-bottom: 20px;
   border-radius: 4px;
 }
-.tag-text{
+.tag_text{
   color: #FFFFFF;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 16px;
   padding: 10px 10px;
-}
-.tag-box-li{
-  display: inline-block;
-  width: 1000px;
-  height: auto;
-  margin-bottom: 20px;
-}
-.tag-box-li li{
-  float: left;
-}
-.tag-text-li{
-  color: #ffffff;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  padding: 10px 10px;
-  margin-left: 20px;
-  border-radius: 4px;
 }

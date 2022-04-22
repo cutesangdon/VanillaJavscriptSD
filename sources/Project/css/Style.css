@@ -181,3 +181,22 @@ footer{
   font-size:15px;  /* 글자 크기 */ 
   color:rgb(71, 71, 71);   /* 글자 색 */ 
 }
+
+
+
+.box{
+  border: black solid 1px;
+  width: 100px;
+  height: 100px;
+  overflow-y: scroll;
+  transform: rotate(-90deg);
+  -ms-overflow-style: none;
+}
+.box::-webkit-scrollbar{
+  display:none;
+}
+.boxbox{
+  transform: rotate(90deg);
+  margin-top:100px; 
+  border: black solid 1px;
+}
