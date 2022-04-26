@@ -1,6 +1,11 @@
-* {margin: 0px; padding: 0px;}
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 /* 카드 속성 */
-.todo_card{
+.todo_card {
   margin: 0 auto;
   width: 80%;
   max-width: 500px;
@@ -9,55 +14,22 @@
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #FFFFFF;
-  -webkit-user-select:none; -moz-user-select:none;
-  -ms-user-select:none; user-select:none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
+
 /* 컨텐츠 속성 */
-.card_contents1{
+.card_contents1 {
   display: inline-block;
-  width: 240px; 
+  width: 240px;
   height: 18px;
   margin-top: 16px;
   margin-left: 20px;
 }
-.card_contents2{
-  display: inline-block;
-  width: calc(100% - 40px);
-  margin: 18px 0px;
-  padding: 0 20px;
-}
-/* 상단 이미치 & 단색 속성*/
-.top_bar{
-  width: 100%;
-  height: 30px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-.top_img img{
-  max-width: 100%;
-  height: auto;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-/* 하단 이미지 버튼 속성*/
-.menu_img{
-  width: 100%;
-  height: 20px;
-  margin-bottom: 20px;
-  display: inline-block;
-}
-.img1{
-  float: left;
-  padding-left: 20px;
-}
-.img2{
-  float: right;
-  margin-left: 20px;
-  padding-right: 20px;
-}
-  
-/* 컨텐츠 폰트 설정 */
-.card_contents1 p{
+
+.card_contents1 p {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 550;
@@ -65,7 +37,15 @@
   line-height: 18px;
   letter-spacing: 0.05em;
 }
-.card_contents2 p{
+
+.card_contents2 {
+  display: inline-block;
+  width: calc(100% - 40px);
+  margin: 18px 0px;
+  padding: 0 20px;
+}
+
+.card_contents2 p {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 400;
@@ -74,14 +54,51 @@
   letter-spacing: 0.05em;
   color: #797979;
 }
-/* 시간 영역 */
-.time{
+
+/* 상단 이미치 & 단색 속성*/
+.top_bar {
+  width: 100%;
+  height: 30px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.top_img img {
+  max-width: 100%;
+  height: auto;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* 하단 이미지 버튼 속성*/
+.menu_img {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 20px;
   display: inline-block;
-  width: 240px; height: 18px;
+}
+
+.img1 {
+  float: left;
+  padding-left: 20px;
+}
+
+.img2 {
+  float: right;
+  margin-left: 20px;
+  padding-right: 20px;
+}
+
+/* 시간 영역 */
+.time {
+  display: inline-block;
+  width: 240px;
+  height: 18px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
-.time span{
+
+.time span {
   font-family: 'Noto Sans KR';
   font-style: normal;
   font-weight: 550;
@@ -91,23 +108,27 @@
   letter-spacing: 0.05em;
   color: #222222;
 }
-.time img{
+
+.time > img {
   vertical-align: bottom;
   padding-right: 12px;
 }
+
 /* 태그 영역 */
-.tag{
+.tag {
   width: 100%;
   height: auto;
   min-height: 10px;
-  overflow-x: scroll; 
+  overflow-x: scroll;
   white-space: nowrap;
   -ms-overflow-style: none;
 }
-.tag::-webkit-scrollbar{
-  display:none;
+
+.tag::-webkit-scrollbar {
+  display: none;
 }
-.tag_box{
+
+.tag_box {
   display: inline-block;
   width: auto;
   height: auto;
@@ -117,11 +138,13 @@
   margin-bottom: 20px;
   border-radius: 4px;
 }
-.tag_text {
+
+.tag_box > .tag_text {
   color: #FFFFFF;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
-  padding: 10px 10px;
+  line-height: 36px;
+  padding: 0px 10px;
+  height: 38px;
 }
