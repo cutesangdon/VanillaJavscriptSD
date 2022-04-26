@@ -1,5 +1,4 @@
 * {margin: 0px; padding: 0px;}
-ul {list-style: none;}
 /* 카드 속성 */
 .todo_card{
   margin: 0 auto;
@@ -13,7 +12,7 @@ ul {list-style: none;}
   -webkit-user-select:none; -moz-user-select:none;
   -ms-user-select:none; user-select:none;
 }
-/* 컨텐츠 박스 속성 */
+/* 컨텐츠 속성 */
 .card_contents1{
   display: inline-block;
   width: 240px; 
@@ -57,7 +56,7 @@ ul {list-style: none;}
   padding-right: 20px;
 }
   
-/*컨텐츠 박스 폰트 설정 */
+/* 컨텐츠 폰트 설정 */
 .card_contents1 p{
   font-family: 'Noto Sans KR';
   font-style: normal;
@@ -109,11 +108,11 @@ ul {list-style: none;}
   display:none;
 }
 .tag_box{
+  display: inline-block;
   width: auto;
   height: auto;
   min-width: 35px;
   min-height: 10px;
-  display: inline-block;
   margin-left: 20px;
   margin-bottom: 20px;
   border-radius: 4px;
