@@ -148,3 +148,14 @@
   padding: 0px 10px;
   height: 38px;
 }
+
+.tag_box input {
+  height: 38px;
+  border-radius: 4px;
+  border: none;
+  padding: 0px 10px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+}
