@@ -21,8 +21,12 @@ document.getElementById("first").innerHTML = "<p>[컴아트 시스템 입사]<p>
 document.getElementById("second").innerHTML = "<p>입사일은 " + joinYear+ "년 " + (joinMonth + 1) + "월 " + joinDate + "일입니다.</p>";
 document.getElementById("third").innerHTML = "<p>입사 후 " + workingDay + "일이 지났으며<p>";
 document.getElementById("fourth").innerHTML = "<p>" + workingYear + "년 " + workDay + "일이 지났습니다.<p>";
-document.getElementById("fifth").innerHTML = "<p>전역일은 " + dischargeYear + "년 " + (dischargeMonth + 1) + "월 " 
+if(dischargeDay>=1){
+  document.getElementById("fifth").innerHTML = "<p>전역일은 " + dischargeYear + "년 " + (dischargeMonth + 1) + "월 " 
 + dischargeDate + "일이며" + "<br>" + dischargeDay + "일이 남았습니다.<p>";
+}else if(dischargeDay==0){
+  document.getElementById("fifth").innerHTML = "전역일입니다.";
+}else{document.getElementById("fifth").innerHTML = "전역 축하드립니다!!!";}
 
 function Button_click() {
   var MSG = "출력\n";
