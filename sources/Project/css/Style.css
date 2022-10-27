@@ -25,18 +25,18 @@ body{
   background-color: rgb(190, 190, 190);
   padding-top: 75px;
 }
-h1 {display: block; padding-left: 320px; font-size: 25px; font-family: jua; 
+h1 {display: block; padding-left: 20%; font-size: 25px; font-family: jua; 
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* 본문 속성 */
-h2 {color:white; line-height:75px; float: left; font-size: 30px; position: fixed; left: 320px;
+h2 {color:white; line-height:75px; float: left; font-size: 30px; position: fixed; left: 20%;
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* 로고 속성 */
 a {-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none} /* 메뉴 및 링크 속성 */
 p{display: block; font-size: 25px; font-family: jua; 
   -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none}
 /* 로고 */
 #wrapper {width: 1920px; height: auto; margin:0 auto;}
-#topMenu {float:right; height:45px; position: fixed; right:320px;}
+#topMenu {float:right; height:45px; position: fixed; right:10%;}
 #topMenu > li {float: left;}
-#topMenu > li > a {line-height: 75px; color:white; padding:0 15px; display: block;}
+#topMenu > li > a {line-height: 75px; color:white; padding:0 20px; display: block;}
 #topMenu > li > a:hover {color: rgb(190, 190, 190);}
 
 /* 본문 */
@@ -193,10 +193,10 @@ footer{
   -ms-overflow-style: none;
 }
 .box::-webkit-scrollbar{
-  display:none;
+  display:none; /* 스크롤바 UI삭제 */
 }
 .boxbox{
-  transform: rotate(90deg);
+  transform: rotate(90deg); /* boxbox만 90도 돌림*/
   margin-top:100px; 
   border: black solid 1px;
 }
