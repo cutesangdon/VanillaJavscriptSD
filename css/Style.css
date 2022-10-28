@@ -1,7 +1,5 @@
 @font-face {font-family: jua; src: url("../font/BMJUA_ttf.ttf");}
-* {margin:0; padding:0; box-sizing: border-box;} /* 마진 리셋, 패딩 리셋, 박스 영역은 테두리까지 */                         /* 텍스트 링크 밑줄 없애기 */
-ul {list-style: none;}
-
+* {margin:0; padding:0; box-sizing: border-box;} /* 마진 리셋, 패딩 리셋, 박스 영역은 테두리까지 */
 #container {
   width: 100%;
   margin: 0 auto;
@@ -9,7 +7,7 @@ ul {list-style: none;}
 /* 헤더 영역 - 로고와 내비게이션 */
 header {
   width: 100%;
-  height: 4em;
+  height: auto;
   background-color: #8F8EBF; 
   border: none;
   z-index: 9999;
@@ -27,14 +25,25 @@ h1 {
 p{
   display: block;
   font-family: jua;}
-/* 로고 */
-#topMenu {position: absolute; left: 50%; transform: translateX(-50%);}
-#topMenu > li {float: left;}
-#topMenu > li > a {
-  color:white;
+#TopMenu{
+  margin: 0 auto;
+  padding: 1em 0em 1em 0em;
+  width: 800px;
+  text-align: center;
 }
-#topMenu > li > a:hover {
-  color: rgb(190, 190, 190);
+.Menu{
+  display: inline-block;
+  font-size: 1.6rem;
+  font-family: jua;
+}
+#LOGO{
+  display: inline-block;
+  font-size: 2.2rem;
+  font-family: jua;
+}
+.Menu a,#LOGO a{
+  color: white;
+  text-decoration:none;
 }
 
 /* 본문 */
@@ -42,9 +51,8 @@ p{
   margin: 0 auto;
   width: 80%;
   border:1px solid black;
-  border-radius: 1em;
-  background-color: white;
-  margin-bottom: 80px;
+  border-radius: 0.5em;
+  background-color: e5e5e5;
 }
 #btn input:hover{
   background-color: rgb(140, 140, 140);
@@ -67,12 +75,13 @@ p{
   height: 50px;
   border:1px solid black;
 }
+/* 체크 박스 속성*/
 #radioBlock{
   display: inline-block;
   margin: 5px;
   background-color: white;
   width: 200px;
-  height: 255px;
+  height: auto;
   border:1px solid black;
 }
 #radio{
@@ -80,13 +89,12 @@ p{
   font-family: jua;
   margin: 5px;
 }
- /* 체크 박스 속성*/
  #checkboxBlock{
   display: inline-block;
   margin: 5px;
   background-color: white;
   width: 200px;
-  height: 255px;
+  height: auto;
   border:1px solid black;
  }
  #checkbox{
@@ -95,14 +103,37 @@ p{
 }
 /* PC Page 본문 속성 */
 #spantext{
-  font-size: 3em; font-family: jua;
-  margin:  5px;
+  font-family: jua;
+  margin: 1em;
+  font-size: 1.8rem;
 }
-@media (max-width:800px)
-{#spantext{
-  font-size: 1em; font-family: jua;
-  margin:  5px;
-}}
+@media(max-width:800px){
+  #spantext{
+    font-family: jua;
+    margin: 1em;
+    font-size: 1rem;
+  }
+  #TopMenu{
+    margin: 0 auto;
+    padding: 1em 0em 1em 0em;
+    width: 336px;
+    text-align: center;
+  }
+  .Menu{
+    display: inline-block;
+    font-size: 1rem;
+    font-family: jua;
+  }
+  #LOGO{
+    display: inline-block;
+    font-size: 1.6rem;
+    font-family: jua;
+  }
+  .Menu a,#LOGO a{
+    color: white;
+    text-decoration:none;
+  }
+}
 #resetTEXT{
   font-family: jua;
   border-bottom: 2px solid;
@@ -112,39 +143,6 @@ p{
   color: white;
   cursor: pointer;
 }
-
-
-/******************/
-/*   푸터 영역    */
-/******************/
-
-footer{
-  width:100%;
-  height:70px; 
-  background-color:#8F8EBF; 
-  position:fixed; bottom : 0;
-}
-#bottomMenu{
-  width:100%;
-  height:45px;
-}
-#bottomMenu ul {
-  margin-top:15px;  
-}
-#bottomMenu ul li{
-  float: left;  /* 가로로 배치 */ 
-  padding:5px 20px;
-  border-right:1px solid white;   /* 항목 오른쪽에 테두리 */ }
-#bottomMenu
-#bottomMenu ul li:last-child{
-  border:none;  /* 마지막 항목에는 오른쪽 테두리 없음 */  
-}
-#bottomMenu ul li a{  
-  font-family: jua;
-  font-size:15px;  /* 글자 크기 */ 
-  color:rgb(71, 71, 71);   /* 글자 색 */ 
-}
-
 
 
 .box{

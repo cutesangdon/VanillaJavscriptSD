@@ -39,9 +39,9 @@ function time_start(){
 function timer(){
   if(time==0){ /* 타이머 종료 */
     document.getElementById("disab4").setAttribute('disabled',false);
-    document.getElementById("remaining hour").innerHTML = "시간이"
-    document.getElementById("remaining min").innerHTML = " 종료 되었습니다."
-    document.getElementById("remaining sec").innerHTML = ""
+    document.getElementById("remaining hour").innerHTML = "시간이";
+    document.getElementById("remaining min").innerHTML = " 종료 되었습니다.";
+    document.getElementById("remaining sec").innerHTML = "";
     clearInterval(Interval)
     alert("시간이 종료되었습니다.")
   }
