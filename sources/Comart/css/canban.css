@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#untitled-canban {
+  position: absolute;
+  left: 50%;
+  margin-left: -180px;
+  width: 360px;
+  height: 800px;
+  background: linear-gradient(158.58deg, #764D32 -7.21%, #2A1712 6.7%, #764D32 97.88%, #B7825A 103.59%);
+}
+
+#Rectangle17 {
+  position: absolute;
+  width: 96.25px;
+  height: 27.34px;
+  left: 131.88px;
+  top: 351.88px;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+
+#Rectangle18 {
+  position: absolute;
+  width: 59.61px;
+  height: 27.34px;
+  left: 131.88px;
+  top: 386.33px;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+
+#Rectangle19 {
+  position: absolute;
+  width: 36.64px;
+  height: 27.34px;
+  left: 131.88px;
+  top: 420.78px;
+  background: #FFFFFF;
+  border-radius: 6px;
+}
+
+#T {
+  position: absolute;
+  width: 16.95px;
+  height: 27.34px;
+  left: 203px;
+  top: 400px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: #FFFFFF;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/*# sourceMappingURL=css.css.map */

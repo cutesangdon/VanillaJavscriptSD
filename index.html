@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1">
+  <title>MainPage</title>
+  <link rel="stylesheet" href="Style.css">
+</head>
+<header>
+  <div id="TopMenu">
+    <div class="Menu"><a href="page1.html">MENU</a></div>
+    <div class="Menu"><a href="page2.html">ROLL</a></div>
+    <div id="LOGO"><a href="index.html">MAINPAGE</a></div>
+    <div class="Menu"><a href="page3.html">NONE</a></div>
+    <div class="Menu"><a href="page4.html">TIME</a></div>
+  </div>
+</header>
+<body>
+  <div id="container">
+    <div id="cont_left">
+      <div id = spantext>
+        <span id="first"></span><br/>
+        <span id="second"></span><br/>
+        <span id="third"></span><br/>
+        <span id="fourth"></span><br/>
+        <span id="fifth"></span>
+      </div>
+      <div id="checkboxBlock">
+        <div id="checkbox">
+          <input type='checkbox' id='disableSA' name='selectall' value='selectall' onclick='selectAll(this)'/> 
+          <b>Select All</b></br>
+          <input type='checkbox' name='CBbox' value='zero' onclick='checkSelectAll()'> 0 </br>
+          <input type='checkbox' name='CBbox' value='one'  onclick='checkSelectAll()'> 1 </br>
+          <input type='checkbox' name='CBbox' value='two'  onclick='checkSelectAll()'> 2 </br>
+          <input type='checkbox' name='CBbox' value='three'onclick='checkSelectAll()'> 3 </br>
+          <input type='checkbox' name='CBbox' value='four' onclick='checkSelectAll()'> 4 </br>
+          <input type='checkbox' name='CBbox' value='five' onclick='checkSelectAll()'> 5 </br>
+          <input type='checkbox' name='CBbox' value='six'  onclick='checkSelectAll()'> 6 </br>
+          <input type='checkbox' name='CBbox' value='seven'onclick='checkSelectAll()'> 7 </br>
+          <input type='checkbox' name='CBbox' value='eight'onclick='checkSelectAll()'> 8 </br>
+          <input type='checkbox' name='CBbox' value='nine' onclick='checkSelectAll()'> 9 </br>
+          <input type='checkbox' name='CBbox' value='ten'  onclick='checkSelectAll()'> 10</br>
+          <div id="btn">
+            <input type="button" value="Check" onclick="Button_click()">
+          </div>
+        </div>
+      </div>
+      <div id="radioBlock">
+        <div id = radio></br>
+          <input type="radio" name='RDbox' value="zero" > 0 </br>
+          <input type="radio" name='RDbox' value="one"  > 1 </br>
+          <input type="radio" name='RDbox' value="two"  > 2 </br>
+          <input type="radio" name='RDbox' value="three"> 3 </br>
+          <input type="radio" name='RDbox' value="four" > 4 </br>
+          <input type="radio" name='RDbox' value="five" > 5 </br>
+          <input type="radio" name='RDbox' value="six"  > 6 </br>
+          <input type="radio" name='RDbox' value="seven"> 7 </br>
+          <input type="radio" name='RDbox' value="eight"> 8 </br>
+          <input type="radio" name='RDbox' value="nine" > 9 </br>
+          <input type="radio" name='RDbox' value="ten" > 10 </br>
+          <div id="btn">
+            <input type="button" value="Radio" onclick="Radio_click()">
+          </div>
+        </div>
+      </div>
+      <div id="btn">
+        <input type="button" value="Random" onclick="shuffle()">
+      </div>
+    </div>
+  </div>
+</body>
+<script src="JS/mainpage.js"></script>
+</html>

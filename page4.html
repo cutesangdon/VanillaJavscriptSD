@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1">
+  <title>PC</title>
+  <link rel="stylesheet" href="Style.css">
+  <script src="JS/Page4.js"></script>
+</head>
+<header>
+  <div id="TopMenu">
+    <div class="Menu"><a href="page1.html">MENU</a></div>
+    <div class="Menu"><a href="page2.html">ROLL</a></div>
+    <div id="LOGO"><a href="index.html">MAINPAGE</a></div>
+    <div class="Menu"><a href="page3.html">NONE</a></div>
+    <div class="Menu"><a href="page4.html">TIME</a></div>
+  </div>
+</header>
+<body>
+<div id="container">
+  <div id="cont_left">
+    <div id ="spantext">
+      <span id = "remaining hour">잔여</span>
+      <span id = "remaining min">시간</span>
+      <span id = "remaining sec"></span><br/>
+      <span id = "used hour">사용</span>
+      <span id = "used min">시간</span>
+      <span id = "used sec"></span>
+    </div>
+    <div id="btn">
+      <input type="button" id="disab1" value="서비스 시작"onclick="time_start()"><br/>
+      <input type="button" id="disab2" disabled value="30분 추가" onclick="thirtyM()"><br/>
+      <input type="button" id="disab3" disabled value="1시간 추가" onclick="oneH()"><br/>
+      <input type="button" id="disab4" disabled value="시간 종료" onclick="end()"><br/>
+      <input type="button" id="disab5" disabled value="초기화" onclick="reset()">
+      <span id="resetTEXT" style="display: none;">시스템이 초기화 됩니다.</span>
+      <input type="button" id="resetBT1" value="확인" onclick="resetOK()" style="display: none;">
+      <input type="button" id="resetBT2" value="취소" onclick="resetCC()" style="display: none;">
+    </div>
+  </div>
+</div>
+</body>
+</html>

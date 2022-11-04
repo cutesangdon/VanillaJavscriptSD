@@ -1,0 +1,174 @@
+@font-face {font-family: jua; src: url("../font/BMJUA_ttf.ttf");}
+* {margin:0; padding:0; box-sizing: border-box;} /* 마진 리셋, 패딩 리셋, 박스 영역은 테두리까지 */
+#container {
+  width: 100%;
+  margin: 0 auto;
+}
+/* 헤더 영역 - 로고와 내비게이션 */
+header {
+  width: 100%;
+  height: auto;
+  background-color: #8F8EBF; 
+  border: none;
+  z-index: 9999;
+  margin-bottom: 1em;
+}
+body{
+  width: 100%; 
+  background-color: rgb(190, 190, 190);
+}
+h1 {
+  display: block; 
+  padding-left: 20%; 
+  font-size: 25px; 
+  font-family: jua;} /* 본문 속성 */
+p{
+  display: block;
+  font-family: jua;}
+#TopMenu{
+  margin: 0 auto;
+  padding: 1em 0em 1em 0em;
+  width: 800px;
+  text-align: center;
+}
+.Menu{
+  display: inline-block;
+  font-size: 1.6rem;
+  font-family: jua;
+}
+.Menu a:hover{
+  color: rgb(170, 170, 170);
+}
+#LOGO{
+  display: inline-block;
+  font-size: 2.2rem;
+  font-family: jua;
+}
+.Menu a,#LOGO a{
+  color: white;
+  text-decoration:none;
+}
+
+/* 본문 */
+#cont_left{
+  margin: 0 auto;
+  width: 80%;
+  border:1px solid black;
+  border-radius: 0.5em;
+  background-color: e5e5e5;
+}
+#btn input:hover{
+  background-color: rgb(140, 140, 140);
+}
+#btn input{
+  cursor: pointer;
+  font-family: jua; font-size: 16px;
+  margin: 5px;
+}
+
+/*****************/
+/*  Roll 영역  */
+/*****************/
+#onebox,#twobox,#threebox,#fourbox,#fivebox,
+#sixbox,#sevenbox,#eightbox,#ninebox,#tenbox{
+  display: inline-block;
+  margin: 5px;
+  background-color: white;
+  width: 128px;
+  height: 50px;
+  border:1px solid black;
+}
+/* 체크 박스 속성*/
+#radioBlock{
+  display: inline-block;
+  margin: 5px;
+  background-color: white;
+  width: 200px;
+  height: auto;
+  border:1px solid black;
+}
+#radio{
+  font-size: 17px;
+  font-family: jua;
+  margin: 5px;
+}
+ #checkboxBlock{
+  display: inline-block;
+  margin: 5px;
+  background-color: white;
+  width: 200px;
+  height: auto;
+  border:1px solid black;
+ }
+ #checkbox{
+  font-family: jua;
+  margin: 5px;
+}
+/* PC Page 본문 속성 */
+#spantext{
+  font-family: jua;
+  margin: 1em;
+  font-size: 1.8rem;
+}
+@media(max-width:800px){
+  #spantext{
+    font-family: jua;
+    margin: 1em;
+    font-size: 1rem;
+  }
+  #TopMenu{
+    margin: 0 auto;
+    padding: 1em 0em 1em 0em;
+    width: 336px;
+    text-align: center;
+  }
+  .Menu{
+    display: inline-block;
+    font-size: 1rem;
+    font-family: jua;
+  }
+  .Menu a:hover{
+    color: rgb(170, 170, 170);
+  }
+  #LOGO{
+    display: inline-block;
+    font-size: 1.6rem;
+    font-family: jua;
+  }
+  .Menu a,#LOGO a{
+    color: white;
+    text-decoration:none;
+  }
+}
+#resetTEXT{
+  font-family: jua;
+  border-bottom: 2px solid;
+}
+#resetBT1{
+  background-color: #1A73E8;
+  color: white;
+  cursor: pointer;
+}
+
+
+.box{
+  margin: 0 auto;
+  border: black solid 1px;
+  width: 100px;
+  height: 100px;
+  overflow-y: scroll;
+  transform: rotate(-90deg);
+  -ms-overflow-style: none;
+}
+.box::-webkit-scrollbar{
+  display:none; /* 스크롤바 UI삭제 */
+}
+.boxbox{
+  transform: rotate(90deg); /* boxbox만 90도 돌림*/
+  margin-top:100px; 
+  border: black solid 1px;
+}
+
+
+
+/*-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none    text-decoration:none;*/
