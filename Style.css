@@ -36,9 +36,6 @@ p{
   font-size: 1.6rem;
   font-family: jua;
 }
-.Menu a:hover{
-  color: rgb(170, 170, 170);
-}
 #LOGO{
   display: inline-block;
   font-size: 2.2rem;
@@ -74,8 +71,8 @@ p{
   display: inline-block;
   margin: 5px;
   background-color: white;
-  width: 128px;
-  height: 50px;
+  width: 10%;
+  aspect-ratio: 4 / 3;
   border:1px solid black;
 }
 /* 체크 박스 속성*/
@@ -126,9 +123,6 @@ p{
     display: inline-block;
     font-size: 1rem;
     font-family: jua;
-  }
-  .Menu a:hover{
-    color: rgb(170, 170, 170);
   }
   #LOGO{
     display: inline-block;
